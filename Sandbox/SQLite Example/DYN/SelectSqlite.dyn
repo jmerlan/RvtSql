@@ -1,0 +1,92 @@
+<Workspace Version="1.3.0.875" X="-2.36226752730965" Y="241.444998106006" zoom="0.460171065523809" ScaleFactor="1" Name="Home" Description="" RunType="Automatic" RunPeriod="1000" HasRunWithoutCrash="True">
+  <NamespaceResolutionMap />
+  <Elements>
+    <CoreNodeModels.Input.BoolSelector guid="8999d37d-86b1-4a0a-8c8f-23f5b20d743b" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="2378.06834707057" y="160.335633659528" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Boolean>True</System.Boolean>
+    </CoreNodeModels.Input.BoolSelector>
+    <CoreNodeModels.Watch guid="5d8645d4-483b-4c7f-992f-86299dc65186" type="CoreNodeModels.Watch" nickname="Watch" x="1456.85983878684" y="-139.998242877757" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="b08eaefa-f67a-4bc2-9374-79ae77a2f0d0" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Query.SQLite_Query" x="2543.40454155511" y="221.93217141795" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Slingshot! for Dynamo\bin\Slingshot.dll" function="Database.Query.SQLite_Query@string,bool,string">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Watch guid="5944bcc0-8562-4205-aac7-7c66bedc7221" type="CoreNodeModels.Watch" nickname="Watch" x="2871.02338985619" y="260.375512652629" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <CoreNodeModels.Input.StringInput guid="98308393-3031-41cc-b739-ca57e44cbce6" type="CoreNodeModels.Input.StringInput" nickname="String" x="2148.58811626685" y="234.021074290816" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>*</System.String>
+      <System.String value="*" />
+    </CoreNodeModels.Input.StringInput>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="cc930e93-5ef6-4e16-ab4c-1ae758751c23" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="SQL.SelectFrom" x="2238.1740627273" y="234.350542076897" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Slingshot! for Dynamo\bin\Slingshot.dll" function="Database.SQL.SelectFrom@string,string">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="1b462efa-33ce-459f-a681-ff7ffcefb635" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Query.SQLite_Query" x="1459.83553562311" y="235.823168437506" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Slingshot! for Dynamo\bin\Slingshot.dll" function="Database.Query.SQLite_Query@string,bool,string">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Watch guid="83dc98b1-5b27-4246-8d49-b23a418b1432" type="CoreNodeModels.Watch" nickname="Watch" x="1087.47598999121" y="64.2651842033599" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+      <PortInfo index="0" default="False" />
+    </CoreNodeModels.Watch>
+    <CoreNodeModels.Input.BoolSelector guid="1785b546-15df-42ad-be34-81b87105d5f1" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="1241.79961317502" y="169.66300573015" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Boolean>True</System.Boolean>
+    </CoreNodeModels.Input.BoolSelector>
+    <CoreNodeModels.Input.StringInput guid="2d38b957-a332-427e-a37d-a49e60c2b3e0" type="CoreNodeModels.Input.StringInput" nickname="String" x="1024.53783469829" y="192.763748946558" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>*</System.String>
+      <System.String value="*" />
+    </CoreNodeModels.Input.StringInput>
+    <CoreNodeModels.Input.StringInput guid="22e50bab-2682-4d71-9d34-7f404de23d5e" type="CoreNodeModels.Input.StringInput" nickname="String" x="977.944183592983" y="255.760231914529" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>sqlite_master</System.String>
+      <System.String value="sqlite_master" />
+    </CoreNodeModels.Input.StringInput>
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="addfcd12-cc14-45bc-8fdc-3eb7208ee223" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="SQL.SelectFromWhere" x="1125.67832089097" y="235.683198948096" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Slingshot! for Dynamo\bin\Slingshot.dll" function="Database.SQL.SelectFromWhere@string,string,string">
+      <PortInfo index="0" default="False" />
+      <PortInfo index="1" default="False" />
+      <PortInfo index="2" default="False" />
+    </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
+    <CoreNodeModels.Input.StringInput guid="bcb7c7f8-83b3-4a4a-a12d-79e3608d83c8" type="CoreNodeModels.Input.StringInput" nickname="String" x="990.606204587433" y="317.088405074284" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.String>type='table'</System.String>
+      <System.String value="type='table'" />
+    </CoreNodeModels.Input.StringInput>
+  </Elements>
+  <Connectors>
+    <Dynamo.Graph.Connectors.ConnectorModel start="8999d37d-86b1-4a0a-8c8f-23f5b20d743b" start_index="0" end="b08eaefa-f67a-4bc2-9374-79ae77a2f0d0" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="b08eaefa-f67a-4bc2-9374-79ae77a2f0d0" start_index="0" end="5944bcc0-8562-4205-aac7-7c66bedc7221" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="98308393-3031-41cc-b739-ca57e44cbce6" start_index="0" end="cc930e93-5ef6-4e16-ab4c-1ae758751c23" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="cc930e93-5ef6-4e16-ab4c-1ae758751c23" start_index="0" end="b08eaefa-f67a-4bc2-9374-79ae77a2f0d0" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="1b462efa-33ce-459f-a681-ff7ffcefb635" start_index="0" end="5d8645d4-483b-4c7f-992f-86299dc65186" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="1785b546-15df-42ad-be34-81b87105d5f1" start_index="0" end="1b462efa-33ce-459f-a681-ff7ffcefb635" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="2d38b957-a332-427e-a37d-a49e60c2b3e0" start_index="0" end="addfcd12-cc14-45bc-8fdc-3eb7208ee223" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="22e50bab-2682-4d71-9d34-7f404de23d5e" start_index="0" end="addfcd12-cc14-45bc-8fdc-3eb7208ee223" end_index="1" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="addfcd12-cc14-45bc-8fdc-3eb7208ee223" start_index="0" end="1b462efa-33ce-459f-a681-ff7ffcefb635" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="addfcd12-cc14-45bc-8fdc-3eb7208ee223" start_index="0" end="83dc98b1-5b27-4246-8d49-b23a418b1432" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="bcb7c7f8-83b3-4a4a-a12d-79e3608d83c8" start_index="0" end="addfcd12-cc14-45bc-8fdc-3eb7208ee223" end_index="2" portType="0" />
+  </Connectors>
+  <Notes />
+  <Annotations>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="28876f43-65d5-4567-9459-8cdd94fa58e5" annotationText="Get current table " left="2138.58811626685" top="114.335633659528" width="837.43527358934" height="255.039878993101" fontSize="30" InitialTop="160.335633659528" InitialHeight="224.039878993101" TextblockHeight="36" backgrouund="#FF48B9FF">
+      <Models ModelGuid="5944bcc0-8562-4205-aac7-7c66bedc7221" />
+      <Models ModelGuid="8999d37d-86b1-4a0a-8c8f-23f5b20d743b" />
+      <Models ModelGuid="98308393-3031-41cc-b739-ca57e44cbce6" />
+      <Models ModelGuid="cc930e93-5ef6-4e16-ab4c-1ae758751c23" />
+      <Models ModelGuid="b08eaefa-f67a-4bc2-9374-79ae77a2f0d0" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+    <Dynamo.Graph.Annotations.AnnotationModel guid="016ac758-9749-43e5-80ac-beb349d797bf" annotationText="Get list of tables in db" left="967.944183592983" top="-185.998242877757" width="704.89135203013" height="571.086647952041" fontSize="30" InitialTop="-139.998242877757" InitialHeight="555.086647952041" TextblockHeight="36" backgrouund="#FF48B9FF">
+      <Models ModelGuid="1b462efa-33ce-459f-a681-ff7ffcefb635" />
+      <Models ModelGuid="83dc98b1-5b27-4246-8d49-b23a418b1432" />
+      <Models ModelGuid="1785b546-15df-42ad-be34-81b87105d5f1" />
+      <Models ModelGuid="2d38b957-a332-427e-a37d-a49e60c2b3e0" />
+      <Models ModelGuid="22e50bab-2682-4d71-9d34-7f404de23d5e" />
+      <Models ModelGuid="addfcd12-cc14-45bc-8fdc-3eb7208ee223" />
+      <Models ModelGuid="bcb7c7f8-83b3-4a4a-a12d-79e3608d83c8" />
+      <Models ModelGuid="5d8645d4-483b-4c7f-992f-86299dc65186" />
+    </Dynamo.Graph.Annotations.AnnotationModel>
+  </Annotations>
+  <Presets />
+  <Cameras>
+    <Camera Name="Background Preview" eyeX="-17" eyeY="24" eyeZ="50" lookX="12" lookY="-13" lookZ="-58" upX="0" upY="1" upZ="0" />
+  </Cameras>
+</Workspace>
