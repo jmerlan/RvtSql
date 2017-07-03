@@ -1,4 +1,4 @@
-<Workspace Version="1.3.0.875" X="1528.38329394323" Y="1651.65651782203" zoom="0.818758851397553" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="10000" HasRunWithoutCrash="True">
+<Workspace Version="1.3.0.875" X="1355.50912962083" Y="2867.83017426354" zoom="1.42879818399584" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="10000" HasRunWithoutCrash="True">
   <NamespaceResolutionMap />
   <Elements>
     <DSRevitNodesUI.Categories guid="9c59348f-52a4-4aa8-b4b9-f0982e5e0952" type="DSRevitNodesUI.Categories" nickname="Categories" x="-93.4571451217091" y="716.779808872692" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="166:DuctCurves" />
@@ -287,32 +287,43 @@ dataEnteringNode = IN
 #Assign your output to the OUT variable.
 OUT = 0</Script>
     </PythonNodeModels.PythonNode>
-    <CoreNodeModels.Watch guid="572bb845-c35b-4470-ba4e-debd0a146472" type="CoreNodeModels.Watch" nickname="Watch" x="-562.58140486283" y="-1947.88783486007" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+    <CoreNodeModels.Watch guid="572bb845-c35b-4470-ba4e-debd0a146472" type="CoreNodeModels.Watch" nickname="Watch" x="-427.111471001575" y="-1895.08337704155" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
       <PortInfo index="0" default="False" />
     </CoreNodeModels.Watch>
-    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="0b91b65d-0253-4d43-a24e-2451e75aa620" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="-1466.6953985588" y="-1810.11452257138" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="true" CodeText="x;" ShouldFocus="false">
-      <PortInfo index="0" default="False" />
-    </Dynamo.Graph.Nodes.CodeBlockNodeModel>
-    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="0488bf19-bb85-472b-9f9f-778c08d74a3e" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="-870.627804555605" y="-1716.14553226544" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="x;" ShouldFocus="false">
-      <PortInfo index="0" default="False" />
-    </Dynamo.Graph.Nodes.CodeBlockNodeModel>
-    <Dynamo.Graph.Nodes.CustomNodes.Function guid="58191118-82cd-4f4f-ba17-b9e04aa3b718" type="Dynamo.Graph.Nodes.CustomNodes.Function" nickname="Springs.Dictionary.ByKeysValues" x="-906.031409916211" y="-1955.81941820666" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false">
+    <PythonNodeModels.PythonNode guid="04e5d1d4-b65f-4895-8e30-bdb7a206c1ad" type="PythonNodeModels.PythonNode" nickname="Python Script" x="-744.642524254097" y="-1892.72805905474" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="2">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="False" />
-      <PortInfo index="2" default="False" />
-      <ID value="f73b43c1-353a-4b03-a337-7e2fb6c7250c" />
-      <Name value="Springs.Dictionary.ByKeysValues" />
-      <Description value="Dictionaries are an incredibly powerful tool for making associative sets between two equal length lists. The first list must be of unique strings (or numbers) and will be the key and the second list will be the matching values (it can be made up of geometry, elements, even other lists)&#xD;&#xA;The search keys list will provide the corresponding value to the input key." />
-      <Inputs>
-        <Input value="keys" />
-        <Input value="values" />
-        <Input value="searchKeys" />
-      </Inputs>
-      <Outputs>
-        <Output value="result" />
-      </Outputs>
-    </Dynamo.Graph.Nodes.CustomNodes.Function>
-    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="57ed1d40-6a24-4a00-8432-bd3a68bee419" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="-1030.56676045991" y="-1864.75451702759" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;Comments&quot;;" ShouldFocus="false" />
+      <Script>import clr
+clr.AddReference('ProtoGeometry')
+from Autodesk.DesignScript.Geometry import *
+import sys
+sys.path.append(r'C:\Program Files (x86)\IronPython 2.7\DLLs')
+sys.path.append(r'C:\Program Files (x86)\IronPython 2.7\Lib')
+import itertools
+
+#The inputs to this node will be stored as a list in the IN variables.
+keys = IN[0]
+values = IN[1]
+keysTuple = tuple(keys)
+valuesTuple = tuple(values)
+
+testKeys = []
+testValues = []
+
+
+for k in keys[0]:
+	testKeys.append(str(k))
+	
+for v in values[0]:
+	testValues.append(str(v))
+	
+myDic = dict(zip(testKeys,testValues))
+
+#Assign your output to the OUT variable.
+OUT = str(myDic)
+#OUT = myDic.get("Category", "N/A")
+#OUT = str(testKeys)</Script>
+    </PythonNodeModels.PythonNode>
   </Elements>
   <Connectors>
     <Dynamo.Graph.Connectors.ConnectorModel start="9c59348f-52a4-4aa8-b4b9-f0982e5e0952" start_index="0" end="94ee7710-24e2-47a7-abb9-775dd7de1017" end_index="0" portType="0" />
@@ -374,7 +385,7 @@ OUT = 0</Script>
     <Dynamo.Graph.Connectors.ConnectorModel start="3ce2ec34-e411-484b-a6fb-48ee14824e29" start_index="0" end="fa09d351-e735-4df8-9936-d91c320b8d41" end_index="0" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="3ce2ec34-e411-484b-a6fb-48ee14824e29" start_index="0" end="a16b2197-409d-4613-bd6d-b2232dcd4280" end_index="0" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="b41f4a7d-3729-4b05-bcb2-450dc0795c47" start_index="0" end="cf6f0bd6-b3f1-4589-9506-7c6749ed3ea1" end_index="0" portType="0" />
-    <Dynamo.Graph.Connectors.ConnectorModel start="b41f4a7d-3729-4b05-bcb2-450dc0795c47" start_index="0" end="0b91b65d-0253-4d43-a24e-2451e75aa620" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="b41f4a7d-3729-4b05-bcb2-450dc0795c47" start_index="0" end="04e5d1d4-b65f-4895-8e30-bdb7a206c1ad" end_index="0" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="eaf1fadf-edc8-4380-9b71-3ae8035c5324" start_index="0" end="b41f4a7d-3729-4b05-bcb2-450dc0795c47" end_index="2" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="fa09d351-e735-4df8-9936-d91c320b8d41" start_index="0" end="b41f4a7d-3729-4b05-bcb2-450dc0795c47" end_index="0" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="fa09d351-e735-4df8-9936-d91c320b8d41" start_index="0" end="a135c359-1597-46f7-95fd-8392cb322ff2" end_index="0" portType="0" />
@@ -387,16 +398,13 @@ OUT = 0</Script>
     <Dynamo.Graph.Connectors.ConnectorModel start="609f4112-2387-4e1b-8f85-2666ce4f79f0" start_index="0" end="eaf1fadf-edc8-4380-9b71-3ae8035c5324" end_index="1" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="ed06f77b-0017-4869-bfac-6f6c1cf67e85" start_index="0" end="609f4112-2387-4e1b-8f85-2666ce4f79f0" end_index="1" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="dd449b79-ba67-4a2b-8bcd-0fded609915b" start_index="0" end="0f83a33c-0d5e-48a5-a875-736db5328395" end_index="0" portType="0" />
-    <Dynamo.Graph.Connectors.ConnectorModel start="dd449b79-ba67-4a2b-8bcd-0fded609915b" start_index="0" end="0488bf19-bb85-472b-9f9f-778c08d74a3e" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="dd449b79-ba67-4a2b-8bcd-0fded609915b" start_index="0" end="04e5d1d4-b65f-4895-8e30-bdb7a206c1ad" end_index="1" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="baa0fe53-ee22-4112-9ebb-b11bd7f4fd51" start_index="0" end="d1d89460-1960-4747-b76e-ff485a790879" end_index="0" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="7912c796-ff34-44e0-89cf-7105306d5597" start_index="0" end="baa0fe53-ee22-4112-9ebb-b11bd7f4fd51" end_index="1" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="608c2525-0f56-46d4-ab12-ed418158c33d" start_index="0" end="dd449b79-ba67-4a2b-8bcd-0fded609915b" end_index="1" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="d1d89460-1960-4747-b76e-ff485a790879" start_index="0" end="dd449b79-ba67-4a2b-8bcd-0fded609915b" end_index="2" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="e0a6a9c4-4456-4dde-b22a-0734c742b5d7" start_index="0" end="350d2533-bce0-488c-9aca-51393b99653c" end_index="0" portType="0" />
-    <Dynamo.Graph.Connectors.ConnectorModel start="0b91b65d-0253-4d43-a24e-2451e75aa620" start_index="0" end="58191118-82cd-4f4f-ba17-b9e04aa3b718" end_index="0" portType="0" />
-    <Dynamo.Graph.Connectors.ConnectorModel start="0488bf19-bb85-472b-9f9f-778c08d74a3e" start_index="0" end="58191118-82cd-4f4f-ba17-b9e04aa3b718" end_index="1" portType="0" />
-    <Dynamo.Graph.Connectors.ConnectorModel start="58191118-82cd-4f4f-ba17-b9e04aa3b718" start_index="0" end="572bb845-c35b-4470-ba4e-debd0a146472" end_index="0" portType="0" />
-    <Dynamo.Graph.Connectors.ConnectorModel start="57ed1d40-6a24-4a00-8432-bd3a68bee419" start_index="0" end="58191118-82cd-4f4f-ba17-b9e04aa3b718" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="04e5d1d4-b65f-4895-8e30-bdb7a206c1ad" start_index="0" end="572bb845-c35b-4470-ba4e-debd0a146472" end_index="0" portType="0" />
   </Connectors>
   <Notes />
   <Annotations>
@@ -439,7 +447,7 @@ OUT = 0</Script>
       <Models ModelGuid="5a73c4e2-3883-43a9-a0da-2cbbe461d95e" />
       <Models ModelGuid="ea03ea1f-e290-4a11-8f8b-aa9bbf110dd0" />
     </Dynamo.Graph.Annotations.AnnotationModel>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="a6956884-c534-40ef-bbf6-b1591b993cbe" annotationText="Get keys" left="-2525.42375209352" top="-1466.31584627206" width="1182.89099880891" height="460.387606302657" fontSize="30" InitialTop="-1420.31584627206" InitialHeight="444.387606302657" TextblockHeight="36" backgrouund="#FF48B9FF">
+    <Dynamo.Graph.Annotations.AnnotationModel guid="a6956884-c534-40ef-bbf6-b1591b993cbe" annotationText="Get keys" left="-2525.42375209352" top="-1466.31584627206" width="1222.39099880891" height="460.38760630266" fontSize="30" InitialTop="-1420.31584627206" InitialHeight="444.387606302657" TextblockHeight="36" backgrouund="#FF48B9FF">
       <Models ModelGuid="cf6f0bd6-b3f1-4589-9506-7c6749ed3ea1" />
       <Models ModelGuid="b41f4a7d-3729-4b05-bcb2-450dc0795c47" />
       <Models ModelGuid="eaf1fadf-edc8-4380-9b71-3ae8035c5324" />
@@ -447,7 +455,7 @@ OUT = 0</Script>
       <Models ModelGuid="609f4112-2387-4e1b-8f85-2666ce4f79f0" />
       <Models ModelGuid="ed06f77b-0017-4869-bfac-6f6c1cf67e85" />
     </Dynamo.Graph.Annotations.AnnotationModel>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="ef33cfa9-60ad-4294-a8f5-51d6415b0b38" annotationText="Get values" left="-1230.25531486146" top="-1508.29079117818" width="1213.2869694208" height="514.711821362789" fontSize="30" InitialTop="-1462.29079117818" InitialHeight="498.711821362789" TextblockHeight="36" backgrouund="#FF48B9FF">
+    <Dynamo.Graph.Annotations.AnnotationModel guid="ef33cfa9-60ad-4294-a8f5-51d6415b0b38" annotationText="Get values" left="-1230.25531486146" top="-1508.29079117818" width="1291.28696942079" height="514.71182136279" fontSize="30" InitialTop="-1462.29079117818" InitialHeight="498.711821362789" TextblockHeight="36" backgrouund="#FF48B9FF">
       <Models ModelGuid="0f83a33c-0d5e-48a5-a875-736db5328395" />
       <Models ModelGuid="dd449b79-ba67-4a2b-8bcd-0fded609915b" />
       <Models ModelGuid="d7fd6b87-8547-4e98-a94b-c2d75831ec5f" />
