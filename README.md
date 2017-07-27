@@ -1,15 +1,16 @@
-The Seattle Dynamo User Group would like to share what we've been working on.
+### Summary
+The goal of this project is to export a Revit model to SQL. This database should include all neccesary data to recreate the building information model entirely including all parameter values, coordinates, etc.
+
+Disclaimer: Nothing works yet.
 
 ### Folders explained:
 
-- June 2017 Workshop
-  - Sheet Numbering : Automated sheet numbering dyn and rvt file
 - Sandbox
-  - Replace shared parameters : add description
-  - SQLite Example : add description
-  - Shared Paramter Parse : add description
+
+  - Stuff that doesn't work yet  
+
+### How to contribute:
   
-  ### How to contribute:
+  - Fork repository
+  - Request to become a contributor
   
-  - Fork Repository
-  - use github desktop to edit from desktop
