@@ -1,5 +1,5 @@
 ### Summary
-The goal of this project is to export a Revit model to SQL. This database should include all neccesary data to recreate the building information model entirely including all parameter values, coordinates, etc.
+The goal of this project is to export a Revit model to SQL. This database should include all neccesary data to recreate the building information model in its entirety including all geometry, parameter values, coordinates, etc.
 
 Disclaimer: Nothing works yet.
 
