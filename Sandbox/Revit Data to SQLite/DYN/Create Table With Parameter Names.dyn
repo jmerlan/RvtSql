@@ -1,7 +1,7 @@
-<Workspace Version="1.3.1.1736" X="-7171.46427205204" Y="1461.60079465727" zoom="0.922582601912183" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="10000" HasRunWithoutCrash="False">
+<Workspace Version="1.3.1.1736" X="-10082.5553165174" Y="2221.98566877774" zoom="0.973394284212499" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="10000" HasRunWithoutCrash="True">
   <NamespaceResolutionMap />
   <Elements>
-    <DSRevitNodesUI.Categories guid="9c59348f-52a4-4aa8-b4b9-f0982e5e0952" type="DSRevitNodesUI.Categories" nickname="Categories" x="7029.39118644104" y="-1982.30627653881" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="166:DuctCurves" />
+    <DSRevitNodesUI.Categories guid="9c59348f-52a4-4aa8-b4b9-f0982e5e0952" type="DSRevitNodesUI.Categories" nickname="Categories" x="7029.39118644104" y="-1982.30627653881" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="5:DuctTerminal" />
     <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="e8da1840-b318-4f5c-b86a-4a31671528e7" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Parameter.Value" x="8208.77612709006" y="-1717.60415402477" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="RevitNodes.dll" function="Revit.Elements.Parameter.Value">
       <PortInfo index="0" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
@@ -94,7 +94,7 @@ OUT = '"' + str(category) + '"'</Script>
     </PythonNodeModels.PythonNode>
     <CoreNodeModels.Input.Filename guid="2a6cf391-51ef-4699-8661-c51c81c7d23c" type="CoreNodeModels.Input.Filename" nickname="File Path" x="11007.8451516627" y="-2192.69690544725" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <System.String>..\DB\Mechanical.db</System.String>
-      <HintPath>C:\Users\JRMerlan\Documents\GitHub\RvtSql\Sandbox\Revit Data to SQLite\DB\Mechanical.db</HintPath>
+      <HintPath>C:\Users\J. Merlan\Dev Lab\RvtSql\Sandbox\Revit Data to SQLite\DB\Mechanical.db</HintPath>
     </CoreNodeModels.Input.Filename>
     <PythonNodeModels.PythonNode guid="5c2bd772-9109-48be-a1df-9c31c84799b2" type="PythonNodeModels.PythonNode" nickname="Python: Create string" x="10676.1386026035" y="-1827.2560163582" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" inputcount="1">
       <PortInfo index="0" default="False" />
@@ -214,16 +214,16 @@ OUT = SqlCommand</Script>
   </Connectors>
   <Notes />
   <Annotations>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="8ac9e161-cadb-4883-b05e-7a88d3fdf013" annotationText="Get all elements and their parameters" left="7578.46207645284" top="-1189.5638906838" width="643.10141195212" height="203.63456209011" fontSize="30" InitialTop="-1143.5638906838" InitialHeight="484.790074722147" TextblockHeight="36" backgrouund="#FF48B9FF">
+    <Dynamo.Graph.Annotations.AnnotationModel guid="8ac9e161-cadb-4883-b05e-7a88d3fdf013" annotationText="Get all elements and their parameters" left="7578.46207645284" top="-1189.5638906838" width="854.10141195212" height="487.63456209011" fontSize="30" InitialTop="-1143.5638906838" InitialHeight="484.790074722147" TextblockHeight="36" backgrouund="#FF48B9FF">
       <Models ModelGuid="b9f62f22-08e3-44b7-84ef-8bc685a0440e" />
       <Models ModelGuid="49ffbb3a-6f74-4189-959f-44ea248e0219" />
       <Models ModelGuid="265aa3c4-9cb6-4d58-a91d-b26d249f6b7f" />
     </Dynamo.Graph.Annotations.AnnotationModel>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="a6456183-4658-4191-a602-73f3df844ff7" annotationText="Get parameter names" left="8484.35210085024" top="-1203.17846454621" width="342.336985526921" height="143.69509236314" fontSize="30" InitialTop="-1157.17846454621" InitialHeight="411.695092363132" TextblockHeight="36" backgrouund="#FF48B9FF">
+    <Dynamo.Graph.Annotations.AnnotationModel guid="a6456183-4658-4191-a602-73f3df844ff7" annotationText="Get parameter names" left="8484.35210085024" top="-1203.17846454621" width="534.836985526921" height="427.69509236314" fontSize="30" InitialTop="-1157.17846454621" InitialHeight="411.695092363132" TextblockHeight="36" backgrouund="#FF48B9FF">
       <Models ModelGuid="0c300f90-7166-40c1-8fc7-264b1fcc2091" />
       <Models ModelGuid="9ad4cd3f-d13e-4e5c-934f-4b4ecbedcee3" />
     </Dynamo.Graph.Annotations.AnnotationModel>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="fb83bae9-8136-403b-a00d-4eeba229abea" annotationText="Get parameter values" left="8198.77612709006" top="-1763.60415402477" width="791.611486614291" height="348.63532366716" fontSize="30" InitialTop="-1717.60415402477" InitialHeight="530.564998645346" TextblockHeight="36" backgrouund="#FF48B9FF">
+    <Dynamo.Graph.Annotations.AnnotationModel guid="fb83bae9-8136-403b-a00d-4eeba229abea" annotationText="Get parameter values" left="8198.77612709006" top="-1763.60415402477" width="1002.61148661429" height="546.56499864535" fontSize="30" InitialTop="-1717.60415402477" InitialHeight="530.564998645346" TextblockHeight="36" backgrouund="#FF48B9FF">
       <Models ModelGuid="e8da1840-b318-4f5c-b86a-4a31671528e7" />
       <Models ModelGuid="8b508094-a09b-4676-80aa-e65cde76dcb7" />
       <Models ModelGuid="fa442d74-3d3e-40df-a60d-2898eee3f6aa" />
@@ -232,14 +232,14 @@ OUT = SqlCommand</Script>
       <Models ModelGuid="aac46828-143b-4faa-851f-dae28225a31e" />
       <Models ModelGuid="aca5c2fa-135d-4df9-9b9a-175d19c5dec7" />
     </Dynamo.Graph.Annotations.AnnotationModel>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="5ecfd3a6-8116-45fe-8db0-8189a0d2bab6" annotationText="Get one element's parameters and values." left="9628.56750082433" top="-728.873998379274" width="287.095374882569" height="237" fontSize="30" InitialTop="-610.873998379274" InitialHeight="148.974925218613" TextblockHeight="108" backgrouund="#FF848484">
+    <Dynamo.Graph.Annotations.AnnotationModel guid="5ecfd3a6-8116-45fe-8db0-8189a0d2bab6" annotationText="Get one element's parameters and values." left="9628.56750082433" top="-692.873998379274" width="486.095374882569" height="469.97492521862" fontSize="30" InitialTop="-610.873998379274" InitialHeight="148.974925218613" TextblockHeight="72" backgrouund="#FF848484">
       <Models ModelGuid="131ea7c4-9dbb-4f39-b121-1baa6fb1e9bd" />
       <Models ModelGuid="721e3392-04e5-4365-aa68-3ed2f155c4e1" />
     </Dynamo.Graph.Annotations.AnnotationModel>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="1f662bcd-726d-44cf-ba97-fb7d55cf9fc7" annotationText="Set Category" left="7019.39118644104" top="-2028.30627653881" width="186" height="139" fontSize="30" InitialTop="-1982.30627653881" InitialHeight="123" TextblockHeight="36" backgrouund="#FFFFB8D8">
+    <Dynamo.Graph.Annotations.AnnotationModel guid="1f662bcd-726d-44cf-ba97-fb7d55cf9fc7" annotationText="Set Category" left="7019.39118644104" top="-2028.30627653881" width="188" height="139" fontSize="30" InitialTop="-1982.30627653881" InitialHeight="123" TextblockHeight="36" backgrouund="#FFFFB8D8">
       <Models ModelGuid="9c59348f-52a4-4aa8-b4b9-f0982e5e0952" />
     </Dynamo.Graph.Annotations.AnnotationModel>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="5a1383f1-5a59-4471-826f-a44f46862a5a" annotationText="Create a list of parameter names" left="9656.95745364933" top="-1872.68467442354" width="788.268002309571" height="331.98136643932" fontSize="30" InitialTop="-1826.68467442354" InitialHeight="410.289388213856" TextblockHeight="36" backgrouund="#FFC1D676">
+    <Dynamo.Graph.Annotations.AnnotationModel guid="5a1383f1-5a59-4471-826f-a44f46862a5a" annotationText="Create a list of parameter names" left="9656.95745364933" top="-1872.68467442354" width="963.768002309571" height="424" fontSize="30" InitialTop="-1826.68467442354" InitialHeight="410.289388213856" TextblockHeight="36" backgrouund="#FFC1D676">
       <Models ModelGuid="b9a3127f-9791-4733-b0bd-6074c24b8083" />
       <Models ModelGuid="2c8f6930-a64e-4a6d-85bd-ff65d0421e6f" />
       <Models ModelGuid="bfcbd2e9-cc0c-4477-8ee1-244b32a06a61" />
