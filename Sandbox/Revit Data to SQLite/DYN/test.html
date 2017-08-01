@@ -1,0 +1,5916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Web Page from Dynamo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+/* Custom container */
+.container-fixed {
+  margin: 0 auto;
+  max-width: 960px;
+}
+.container-fixed > hr {
+  margin: 30px 0;
+}
+</style>
+
+</head>
+
+<body>
+<div class="container-fixed">
+<table class="table table-striped">
+<tbody>
+<tr> 
+	<td>Panel 401</td> 
+	<td>NLDP-WL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.08.E</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 8 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E9.02</td> 
+	<td>LEVELS G-2 RISER SUMMARIES - N/Y</td> 
+	<td>03/14/17</td> 
+</tr> 
+<tr> 
+	<td>E62.21E</td> 
+	<td>LEVEL 2 EQUIPMENT DETAILS CT ROOMS 1, 2, & 3</td> 
+	<td>02/28/17</td> 
+</tr> 
+<tr> 
+	<td>E3.08.F</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 8 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E9.11</td> 
+	<td>LEVEL 1 WEST PANEL SCHEDULES - YLDP</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 721</td> 
+	<td>YHP-EL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 719</td> 
+	<td>XHP-EL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.02.A.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - A</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E0.02</td> 
+	<td>ELECTRICAL NOTES AND CODE COMPLIANCE</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E62.06P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER RESUS</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 312</td> 
+	<td>XHP-EL3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.29L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING GAMMA ROOM</td> 
+	<td>01/05/17</td> 
+</tr> 
+<tr> 
+	<td>E3.03.F</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E8.01</td> 
+	<td>ELECTRICAL DETAILS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 001</td> 
+	<td>NSWBD-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.035.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3.5</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E9.11EX</td> 
+	<td>LEVEL 1 EXISTING HOSPITAL DIST PANEL SCHEDULES</td> 
+	<td>04/13/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 143</td> 
+	<td>XHP-EL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 002</td> 
+	<td>NSWBD-LG-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 157</td> 
+	<td>YOR-EL1-10</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 145</td> 
+	<td>XLP-EL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 397</td> 
+	<td>MDP (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 0.5.1</td> 
+	<td>ZSWBD-LR-01 Load Shed</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.01.R</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SECTOR - R</td> 
+	<td>03/27/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 09.1</td> 
+	<td>2OXH (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 10</td> 
+	<td>2OXL (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.61</td> 
+	<td>LEVEL 6 WEST PANEL SCHEDULES - NLDP/YLDP</td> 
+	<td>03/15/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 709</td> 
+	<td>XLP-WL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.01.D.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SECTOR - C</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 809</td> 
+	<td>XLP-WL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 517</td> 
+	<td>YLP-EL5-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 117</td> 
+	<td>YOR-WL1-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.G0</td> 
+	<td>LEVEL G SWITCHBOARD SCHEDULES - N/Y/Z</td> 
+	<td>03/14/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 120</td> 
+	<td>YOR-WL1-05</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.02.U</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - U</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 810</td> 
+	<td>YHP-WL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E64.10P</td> 
+	<td>LEVEL 4 ENLARGED PLAN POWER RESPIRATORY THERAPY</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 407</td> 
+	<td>NHP-WL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 305</td> 
+	<td>WHP-L3-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.20P</td> 
+	<td>LEVEL 2 ENLARGED POWER PLAN MRI 1</td> 
+	<td>02/02/17</td> 
+</tr> 
+<tr> 
+	<td>E61.12P</td> 
+	<td>LEVEL 1 ENLARGED PLAN POWER PACU & STAGE 2 NURSE WORK STATION</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E62.02L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING TRIAGE</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E61.11L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING PACU PHASE 1 & AII PHASE 1</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.0GS</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SOUTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 214</td> 
+	<td>WHP-WL2-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 43</td> 
+	<td>2OL2 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 025</td> 
+	<td>NLDP-WLG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 026</td> 
+	<td>NLP-WLG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.01N</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 NORTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E2.01.Q</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - Q</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 127</td> 
+	<td>YOR-WL1-12</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 017</td> 
+	<td>NHP-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 159</td> 
+	<td>YOR-EL1-12</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 617</td> 
+	<td>YLP-EL6-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 503</td> 
+	<td>NLP-WL5-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 614</td> 
+	<td>NLP-EL6-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.A</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - A</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 717</td> 
+	<td>YLP-EL7-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.01S</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SOUTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.B</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - B</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 906</td> 
+	<td>XLP-EL9-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 603</td> 
+	<td>NLP-WL6-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E64.02P</td> 
+	<td>LEVEL 4 ENLARGED PLAN POWER CCU PATIENT ROOM</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>E9.53</td> 
+	<td>LEVEL 5 EAST PANEL SCHEDULES - NLDP/YLDP</td> 
+	<td>03/16/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 25</td> 
+	<td>L1N (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>ED6.60</td> 
+	<td>ENLARGED EXISTING HOSPITAL TI DEMO PLANS</td> 
+	<td>08/09/16</td> 
+</tr> 
+<tr> 
+	<td>E62.28L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING MICU</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 26</td> 
+	<td>L1NA (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 01.1</td> 
+	<td>1OH (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 39.1</td> 
+	<td>HSL1 (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 515</td> 
+	<td>YLDP-EL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 1031</td> 
+	<td>NLPB-RISER-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>ED6.61</td> 
+	<td>ENLARGED EXISTING HOSPITAL TI DEMO PLANS</td> 
+	<td>08/09/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 415</td> 
+	<td>YLDP-EL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E8.10</td> 
+	<td>ELECTRICAL DETAILS</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 714</td> 
+	<td>NLP-EL7-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 219</td> 
+	<td>NLP-EL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E0.01</td> 
+	<td>ELECTRICAL LEGENDS AND ABBREVIATIONS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E2.03.K</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - K</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 622</td> 
+	<td>ZLP-EL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 213</td> 
+	<td>WHP-WL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 611</td> 
+	<td>ZLP-WL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 216</td> 
+	<td>XLP-WL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 801</td> 
+	<td>NLDP-WL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.10N</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 10</td> 
+	<td>12/07/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 303</td> 
+	<td>ZSWBD-L3-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 411</td> 
+	<td>ZLP-WL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E61.01L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING GEN OR</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel CC 01</td> 
+	<td>CC-NSWBD-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 011</td> 
+	<td>WPC-EXT-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E4.01N</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL 1 NORTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E4.0GS</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL G SOUTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 20</td> 
+	<td>POXH (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 09</td> 
+	<td>2OXH (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.D.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - D</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 08</td> 
+	<td>2OYL3 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 21</td> 
+	<td>POH1 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel PKG 01.1</td> 
+	<td>PKG-SWBD-01 (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 310</td> 
+	<td>NLP-WL3-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 030</td> 
+	<td>NHP-WLG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.01</td> 
+	<td>LOAD SUMMARIES - GENS</td> 
+	<td>03/14/17</td> 
+</tr> 
+<tr> 
+	<td>Panel PKG 01</td> 
+	<td>PKG-SWBD-01 (EXIST)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 149</td> 
+	<td>YOR-EL1-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.10P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER CAFÉ</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E9.G4</td> 
+	<td>LEVEL G WEST PANEL SCHEDULES - NLDP/YLDP</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 807</td> 
+	<td>NHP-WL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.30E</td> 
+	<td>LEVEL 2 EQUIPMENT DETAILS SPECT CT</td> 
+	<td>01/12/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 150</td> 
+	<td>YOR-EL1-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 46.1</td> 
+	<td>2NC (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 38.1</td> 
+	<td>2NA (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E3.05.E</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 5 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 006</td> 
+	<td>ZSWBD-LG-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.035.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3.5</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 028</td> 
+	<td>YLDP-WLG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 004</td> 
+	<td>YSWBD-LG-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.02.B</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR -B</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 42</td> 
+	<td>HRN (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 037</td> 
+	<td>YHP-WLG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.L</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - L</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E4.0GN</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL G NORTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 1013</td> 
+	<td>YLPB-RISER-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E0.520</td> 
+	<td>PANEL SCHEDULES</td> 
+	<td>03/14/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 04</td> 
+	<td>1OL3 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.02.A.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2 SECTOR - A</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 03</td> 
+	<td>1OL2 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 1012</td> 
+	<td>YHPB-RISER-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.F</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.01S</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SOUTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E1.01</td> 
+	<td>ELECTRICAL SITE PLAN - OVERALL</td> 
+	<td>11/22/16</td> 
+</tr> 
+<tr> 
+	<td>E3.03.A</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 SECTOR - A</td> 
+	<td>04/07/17</td> 
+</tr> 
+<tr> 
+	<td>E3.01.J</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SECTOR - J</td> 
+	<td>04/07/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 0.3B</td> 
+	<td>GSWGR-LG-01B</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E61.15P</td> 
+	<td>LEVEL 1 ENLARGED PLAN POWER CENTRAL TRANSPORT, BIOMED</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.01.Q</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SECTOR - Q</td> 
+	<td>02/27/17</td> 
+</tr> 
+<tr> 
+	<td>E61.14L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING PHARMACY</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel CC 23</td> 
+	<td>CC-EHP-L3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel CC 20</td> 
+	<td>CC-NLP-L3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 106</td> 
+	<td>YLP-WL1-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 142</td> 
+	<td>ZLP-EL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 37</td> 
+	<td>NDPH (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 1042</td> 
+	<td>YHPB-RISER-04</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.02.C</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - C</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 205</td> 
+	<td>NLP-WL2-04</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E0.06</td> 
+	<td>SITE PANEL SCHEDULES</td> 
+	<td>12/06/16</td> 
+</tr> 
+<tr> 
+	<td>E2.08.F</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 8 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.07N</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 7</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 211</td> 
+	<td>YLP-WL2-05</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 508</td> 
+	<td>XHP-WL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 518</td> 
+	<td>NHP-EL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.J.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - J</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 18</td> 
+	<td>3OZH (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 31</td> 
+	<td>2LSB (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.54</td> 
+	<td>LEVEL 5 EAST PANEL SCHEDULES - N/X/Y/Z</td> 
+	<td>03/16/17</td> 
+</tr> 
+<tr> 
+	<td>E2.09N</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 9</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 316</td> 
+	<td>ZLP-EL3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E6.65</td> 
+	<td>ENLARGED EXISTING HOSPITAL TI LIGHTING PLANS</td> 
+	<td>07/28/16</td> 
+</tr> 
+<tr> 
+	<td>E9.30CC</td> 
+	<td>LEVEL 3 CANCER CARE PANEL SCHEDULES</td> 
+	<td>04/06/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 403</td> 
+	<td>NLP-WL4-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 520</td> 
+	<td>XLP-EL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 226</td> 
+	<td>YLP-EL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 416</td> 
+	<td>YLP-EL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 043</td> 
+	<td>YLDP-ELG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E6G.04L</td> 
+	<td>LEVEL G ENLARGED PLAN LIGHTING BLOOD BANK & PROCESSING</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E4.06N</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL 6</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E0.30</td> 
+	<td>MEDICAL EQUIPMENT CONNECTION SCHEDULE</td> 
+	<td>05/25/16</td> 
+</tr> 
+<tr> 
+	<td>E6G.05P</td> 
+	<td>LEVEL G ENLARGED PLAN POWER CHEM/BAC & COAG/HEME LABS</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E9.90</td> 
+	<td>LEVEL 9/10 PANEL SCHEDULES - X/Z</td> 
+	<td>03/26/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 14</td> 
+	<td>3OYL2 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.J</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - J</td> 
+	<td>04/07/17</td> 
+</tr> 
+<tr> 
+	<td>E3.02.D.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2 SECTOR - D</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 046</td> 
+	<td>YLP-ELG-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.0GS</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SOUTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 121</td> 
+	<td>YOR-WL1-06</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.02.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E3.10.E</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 10 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 618</td> 
+	<td>NHP-EL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 0.3A</td> 
+	<td>GSWGR-LG-01A</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 390.1</td> 
+	<td>3LSB (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.04.F</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 4 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.04.E</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 4 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 390</td> 
+	<td>3LSB (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03.J.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 - SECTOR - J</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 146</td> 
+	<td>YHP-EL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 144</td> 
+	<td>XLDP-EL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 125</td> 
+	<td>YOR-WL1-10</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E6.61</td> 
+	<td>ENLARGED EXISTING HOSPITAL TI POWER PLANS</td> 
+	<td>07/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 0.4</td> 
+	<td>FS-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.01.D</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - D</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 902</td> 
+	<td>ZHDP-WL9-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 505</td> 
+	<td>YLP-WL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.09.F</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 9 (ROOF) SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 811</td> 
+	<td>ZLP-WL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 516</td> 
+	<td>YLP-EL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.04.F</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 4 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.02.Q</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - Q</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E64.04L</td> 
+	<td>LEVEL 4 ENLARGED PLAN LIGHTING CCU MED & CCU NOURISH</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 0.5</td> 
+	<td>ZSWBD-LR-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 013</td> 
+	<td>XPC-EXT-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E61.10L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING PHASE 2 & HVC PHASE 1</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel CC 18</td> 
+	<td>CC-NSWBD-L3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 208</td> 
+	<td>YLP-WL2-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.V</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - V</td> 
+	<td>03/21/17</td> 
+</tr> 
+<tr> 
+	<td>E0.532</td> 
+	<td>PANEL SCHEDULES</td> 
+	<td>03/14/17</td> 
+</tr> 
+<tr> 
+	<td>E3.01.E</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 116</td> 
+	<td>YOR-WL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E6.01</td> 
+	<td>ENLARGED MAIN ELECTRICAL ROOMS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E3.02N</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2 NORTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 616</td> 
+	<td>YLP-EL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.01.C</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SECTOR - C</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E62.24L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING GEN RAD</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 308</td> 
+	<td>NLP-WL3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.73</td> 
+	<td>LEVEL 7 EAST PANEL SCHEDULES - NLDP/YLDP</td> 
+	<td>03/15/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03N</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 NORTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 722</td> 
+	<td>ZLP-EL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03S</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SOUTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E9.82</td> 
+	<td>LEVEL 8 WEST PANEL SCHEDULES - N/X/Y/Z</td> 
+	<td>03/14/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 609</td> 
+	<td>XLP-WL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.02.M</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2 SECTOR - M</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.02.L</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2 SECTOR - L</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E5.01</td> 
+	<td>NORMAL POWER RISER DIAGRAMS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 815</td> 
+	<td>YLDP-EL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 409</td> 
+	<td>XLP-WL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E1.00</td> 
+	<td>ELECTRICAL SITE PLAN</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E66.06P</td> 
+	<td>LEVEL 6 ENLARGED PLAN POWER MS/IC CARE TEAM</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.10N</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 10</td> 
+	<td>12/22/16</td> 
+</tr> 
+<tr> 
+	<td>E61.04L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING CATH LAB</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 408</td> 
+	<td>XHP-WL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.G2</td> 
+	<td>LEVEL G MAIN PANEL SCHEDULES - NLDP/NHP/ULP</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>E3.035N</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3.5</td> 
+	<td>02/16/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 050</td> 
+	<td>XLP-ELG-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.035.J.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3.5 SECTOR - J</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E4.02N</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL 2 NORTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 07</td> 
+	<td>2OYL2 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E0.22</td> 
+	<td>LIGHT SWITCH SCHEDULES</td> 
+	<td>07/24/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 041</td> 
+	<td>NLP-ELG-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E66.01L</td> 
+	<td>LEVEL 6 ENLARGED PLAN LIGHTING MS/IC AII PATIENT ROOM</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 818</td> 
+	<td>NHP-EL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 708</td> 
+	<td>XHP-WL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.20L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING MRI 1 & 2</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 41</td> 
+	<td>L3N (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.02.J.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2 SECTOR - J</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>ED1.00</td> 
+	<td>ELECTRICAL SITE DEMO PLAN</td> 
+	<td>02/02/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 104</td> 
+	<td>YLDP-WL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 225</td> 
+	<td>YLDP-EL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.01.U</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - U</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E3.01.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 217</td> 
+	<td>YHP-WL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.07.E</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 7 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 806</td> 
+	<td>YLP-WL8-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E61.02P</td> 
+	<td>LEVEL 1 ENLARGED PLAN POWER ROBOTIC OR</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>E65.10P</td> 
+	<td>LEVEL 5 ENLARGED PLAN POWER HEMODIALYSIS</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 0.2B</td> 
+	<td>SWGR-LG-02B</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.01L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING ED EYE TMT & BARIATRIC</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 102</td> 
+	<td>NLP-WL1-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.03.B</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 SECTOR - B</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 1021</td> 
+	<td>NLPB-RISER-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.02.E</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.02.F</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 147</td> 
+	<td>YORLDP-EL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E5.02</td> 
+	<td>ESSENTIAL & CRITICAL RISER DIAGRAMS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 138</td> 
+	<td>YLP-EL1-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.83</td> 
+	<td>LEVEL 8 EAST PANEL SCHEDULES - NLDP/YLDP</td> 
+	<td>03/15/17</td> 
+</tr> 
+<tr> 
+	<td>E8.08</td> 
+	<td>ELECTRICAL DETAILS</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>E9.19</td> 
+	<td>LEVEL 1 EAST OR PANEL SCHEDULES -YOR</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>E5.04</td> 
+	<td>ESSENTIAL & CRITICAL RISER DIAGRAMS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E61.03L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING CVOR</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 103</td> 
+	<td>NLP-WL1-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel CC 19</td> 
+	<td>CC-NLP-LG-04</td> 
+	<td>05/24/17</td> 
+</tr> 
+<tr> 
+	<td>E0.20</td> 
+	<td>LIGHT FIXTURE SCHEDULE</td> 
+	<td>05/05/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 507</td> 
+	<td>NHP-WL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E8.09</td> 
+	<td>ELECTRICAL DETAILS</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>E1.00.A</td> 
+	<td>ELECTRICAL SITE PLAN - NORTHEAST</td> 
+	<td>05/06/16</td> 
+</tr> 
+<tr> 
+	<td>E2.035.F</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3.5 SECTOR - F</td> 
+	<td>02/16/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 510</td> 
+	<td>YHP-WL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E5.00</td> 
+	<td>NORMAL POWER RISER DIAGRAMS</td> 
+	<td>01/29/16</td> 
+</tr> 
+<tr> 
+	<td>E6.06</td> 
+	<td>ENLARGED CHILLER YARD PLAN</td> 
+	<td>12/06/16</td> 
+</tr> 
+<tr> 
+	<td>E6.64</td> 
+	<td>ENLARGED EXISTING HOSPITAL TI LIGHTING PLANS</td> 
+	<td>07/28/16</td> 
+</tr> 
+<tr> 
+	<td>E6.67</td> 
+	<td>ENLARGED EXISTING HOSPITAL TI FIRE ALARM PLANS</td> 
+	<td>07/28/16</td> 
+</tr> 
+<tr> 
+	<td>E2.035.A.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3.7 SECTOR - A</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E9.G5</td> 
+	<td>LEVEL G WEST PANEL SCHEDULES - N/W/X/Y/Z</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>E0.21</td> 
+	<td>LIGHT FIXTURE SCHEDULE</td> 
+	<td>05/05/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 703</td> 
+	<td>NLP-WL7-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E0.582E</td> 
+	<td>PANEL SCHEDULES</td> 
+	<td>03/14/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 705</td> 
+	<td>YLP-WL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 202</td> 
+	<td>NLP-WL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 207</td> 
+	<td>YLP-WL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.01.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1</td> 
+	<td>07/17/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 406</td> 
+	<td>YLP-WL4-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.11L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING GIFT SHOP</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.07.F</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 7 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E9.03</td> 
+	<td>LEVELS 4-8 RISER SUMMARIES - N/Y</td> 
+	<td>03/24/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 307</td> 
+	<td>NLDP-WL3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E0.13</td> 
+	<td>PANELBOARD SCHEDULES</td> 
+	<td>12/05/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 131</td> 
+	<td>NLDP-EL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 301</td> 
+	<td>NSWBD-L3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 140</td> 
+	<td>NHP-EL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 008</td> 
+	<td>WSWBD-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 712</td> 
+	<td>NLDP-EL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E4.08N</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL 8</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E4.07N</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL 7</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel CC 21</td> 
+	<td>CC-EHDP-LG-01</td> 
+	<td>05/24/17</td> 
+</tr> 
+<tr> 
+	<td>Panel CC 24</td> 
+	<td>CC-ELP-LG-01</td> 
+	<td>05/24/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 010</td> 
+	<td>WSWBD-LG-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 204</td> 
+	<td>NLP-WL2-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 212</td> 
+	<td>NHP-WL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 701</td> 
+	<td>NLDP-WL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.D.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - D</td> 
+	<td>07/17/17</td> 
+</tr> 
+<tr> 
+	<td>E3.09.F</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 9 (ROOF) SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.09.E</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 9 (ROOF) SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 153</td> 
+	<td>YOR-EL1-06</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 621</td> 
+	<td>YHP-EL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.08P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER ED CARE TEAM</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 396</td> 
+	<td>MSB (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.20</td> 
+	<td>LEVEL 2 WEST PANEL SCHEDULES - NLDP</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 394.1</td> 
+	<td>ES (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E61.20L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING ADMIT /PT. ACCESS</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.03.D.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 SECTOR - D</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 135</td> 
+	<td>YLDP-EL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 047</td> 
+	<td>NHP-ELG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 137</td> 
+	<td>YLP-EL1-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 33</td> 
+	<td>2LSA (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E6.62</td> 
+	<td>ENLARGED EXISTING HOSPITAL TI POWER PLANS</td> 
+	<td>07/28/16</td> 
+</tr> 
+<tr> 
+	<td>E2.01.F</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 34</td> 
+	<td>2CA (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.01.A</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - A</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 306</td> 
+	<td>WLP-L3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 134</td> 
+	<td>NLP-EL1-04</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 220</td> 
+	<td>NLP-EL2-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 108</td> 
+	<td>YLP-WL1-04</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 160</td> 
+	<td>YOR-EL1-14</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 107</td> 
+	<td>YLP-WL1-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 802</td> 
+	<td>NLP-WL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 128</td> 
+	<td>YOR-WL1-14</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E64.05L</td> 
+	<td>LEVEL 4 ENLARGED PLAN LIGHTING CCU CARE TEAM</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.02.J</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - J</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 907</td> 
+	<td>XLP-EL9-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 034</td> 
+	<td>XLDP-WLG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.02.A</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2 SECTOR - A</td> 
+	<td>04/07/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 704</td> 
+	<td>YLDP-WL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 905</td> 
+	<td>XLP-WL9-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E61.14P</td> 
+	<td>LEVEL 1 ENLARGED PLAN POWER PHARMACY</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E6.08</td> 
+	<td>ENLARGED IDF ROOM PLANS LEVELS 1 - 3.5</td> 
+	<td>03/15/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 036</td> 
+	<td>XLP-WLG-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E61.13L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING RADIAL LOUNGE</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel CC 27</td> 
+	<td>CC-NHP-LG-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 132</td> 
+	<td>NLP-EL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 123</td> 
+	<td>YOR-WL1-08</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 136</td> 
+	<td>YLP-EL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03.B</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - B</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 223</td> 
+	<td>NLP-EL2-05</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 1040</td> 
+	<td>NHPB-RISER-04</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E4.01.C ALT</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL 1 SECTOR - C ALT</td> 
+	<td>03/23/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03.E</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E6.02</td> 
+	<td>ENLARGED ELECTRICAL ROOM PLANS LEVELS G - 3.5</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E61.06E</td> 
+	<td>LEVEL 1 EQUIPMENT DETAILS HYBRID OR</td> 
+	<td>01/12/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 210</td> 
+	<td>YLP-WL2-04</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.G8</td> 
+	<td>LEVEL G EAST PANEL SCHEDULES - N/X/Y/Z</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>E3.03N</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 NORTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 602</td> 
+	<td>NLP-WL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E6G.06L</td> 
+	<td>LEVEL G ENLARGED PLAN LIGHTING MICROBIOLOGY & PATHOLOGY</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E8.05</td> 
+	<td>ELECTRICAL DETAILS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 229</td> 
+	<td>YLP-EL2-04</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 512</td> 
+	<td>NLDP-EL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E4.09N</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL 9 (ROOF)</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E6G.07P</td> 
+	<td>LEVEL G POWER ENLARGED PLAN RAPID RESPONSE SHOP</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 612</td> 
+	<td>NLDP-EL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.25L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING FLUORO TYPICAL</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.04N</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 4</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E62.27P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER ECHO</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.05N</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 5</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 501</td> 
+	<td>NLDP-WL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 711</td> 
+	<td>ZLP-WL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 601</td> 
+	<td>NLDP-WL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.03.C</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 SECTOR - C</td> 
+	<td>01/24/17</td> 
+</tr> 
+<tr> 
+	<td>E3.02.K</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2 SECTOR - K</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 1041</td> 
+	<td>NLPB-RISER-04</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 522</td> 
+	<td>ZLP-EL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.25P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER FLUORO 1</td> 
+	<td>02/06/17</td> 
+</tr> 
+<tr> 
+	<td>E0.32</td> 
+	<td>KITCHEN EQUIPMENT CONNECTION SCHEDULE</td> 
+	<td>02/23/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 421</td> 
+	<td>YHP-EL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 394</td> 
+	<td>ES (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E66.05L</td> 
+	<td>LEVEL 6 ENLARGED PLAN LIGHTING MS/IC MED & MS/IC NOURISH</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E0.40</td> 
+	<td>INTERIOR LIGHTING CODE COMPLIANCE</td> 
+	<td>05/25/17</td> 
+</tr> 
+<tr> 
+	<td>E4.02S</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL 2 SOUTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 0.3A.1</td> 
+	<td>GSWGR-LG-01A Load Shed</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E0.12</td> 
+	<td>MECHANICAL EQUIPMENT CONNECTION SCHEDULE</td> 
+	<td>05/25/16</td> 
+</tr> 
+<tr> 
+	<td>E9.G7</td> 
+	<td>LEVEL G EAST PANEL SCHEDULES - YLDP/X</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 1010</td> 
+	<td>NHPB-RISER-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.04.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 4</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 506</td> 
+	<td>YLP-WL5-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.26P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER FLUORO 2</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 513</td> 
+	<td>NLP-EL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 130</td> 
+	<td>YOR-WL1-16</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 031</td> 
+	<td>WHP-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 151</td> 
+	<td>YOR-EL1-04</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03.J</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - J</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 710</td> 
+	<td>YHP-WL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 155</td> 
+	<td>YOR-EL1-08</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.20E</td> 
+	<td>LEVEL 2 ENLARGED EQUIPMENT PLAN MRI 1</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>E9.G6</td> 
+	<td>LEVEL G EAST PANEL SCHEDULES - NLDP</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>E61.13P</td> 
+	<td>LEVEL 1 ENLARGED PLAN POWER RADIAL LOUNGE</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.V</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - V</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E3.06.E</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 6 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 33.1</td> 
+	<td>2LSA (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.U</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - U</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E62.09E</td> 
+	<td>LEVEL 2 ENLARGED EQUIPMENT PLAN ED RAD</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E9.22</td> 
+	<td>LEVEL 2 WEST PANEL SCHEDULES -N/W/X/Y/Z</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>E9.25</td> 
+	<td>LEVEL 2 EAST PANEL SCHEDULES - N/X/Y/Z</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03.D.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - D</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 114</td> 
+	<td>YHP-WL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 021</td> 
+	<td>ZLP-LG-01B</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 1033</td> 
+	<td>YLPB-RISER-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E5.16</td> 
+	<td>EXISTING HOSPITAL RISER DIAGRAMS</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 813</td> 
+	<td>NLP-EL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 613</td> 
+	<td>NLP-EL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.04N</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 4</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E2.03.A</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - A</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E2.02.A</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - A</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E9.14</td> 
+	<td>LEVEL 1 WEST OR PANEL SCHEDULES - YOR</td> 
+	<td>03/14/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 0.1B</td> 
+	<td>SWGR-LG-01B</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 1011</td> 
+	<td>NLPB-RISER-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.06N</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 6</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E9.12</td> 
+	<td>LEVEL 1 WEST PANEL SCHEDULES - N/W/X/Y/Z</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 509</td> 
+	<td>XLP-WL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.01.L</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SECTOR - L</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.02.L</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - L</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 511</td> 
+	<td>ZLP-WL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E0.31</td> 
+	<td>KITCHEN EQUIPMENT CONNECTION SCHEDULE</td> 
+	<td>07/25/16</td> 
+</tr> 
+<tr> 
+	<td>E9.71</td> 
+	<td>LEVEL 7 WEST PANEL SCHEDULES - NLDP/YLDP</td> 
+	<td>03/15/17</td> 
+</tr> 
+<tr> 
+	<td>E5.06</td> 
+	<td>EMERGENCY POWER RISER DIAGRAMS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E5.05</td> 
+	<td>OPTIONAL STAND-BY RISER DIAGRAMS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E61.06L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING HYBRID OR</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 418</td> 
+	<td>NHP-EL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E8.07</td> 
+	<td>ELECTRICAL DETAILS</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.F</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E61.10P</td> 
+	<td>LEVEL 1 ENLARGED PLAN POWER PHASE 2 & HVC PHASE 1</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E4.03N</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL 3 NORTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E3.035.E</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3.5 SECTOR - E</td> 
+	<td>02/16/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 29</td> 
+	<td>NKL (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.A.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - A</td> 
+	<td>07/17/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 28</td> 
+	<td>EQKL (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E6G.01P</td> 
+	<td>LEVEL G ENLARGED PLAN POWER  KITCHEN</td> 
+	<td>10/27/16</td> 
+</tr> 
+<tr> 
+	<td>E63.11P</td> 
+	<td>LEVEL 3 ENLARGED PLAN POWER HVAC SHOP</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 044</td> 
+	<td>YLP-ELG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.22P</td> 
+	<td>LEVEL 2 ENLARGED POWER PLAN CT ROOMS 2 & 3</td> 
+	<td>06/13/17</td> 
+</tr> 
+<tr> 
+	<td>E5.13</td> 
+	<td>DAS RISER DIAGRAM</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E3.07.E</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 7 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 414</td> 
+	<td>NLP-EL4-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.21L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING CT ROOMS 1, 2, & 3</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.03.K</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 SECTOR - K</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 417</td> 
+	<td>YLP-EL4-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.09N</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 9</td> 
+	<td>03/24/17</td> 
+</tr> 
+<tr> 
+	<td>E2.02.D.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - D</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 314</td> 
+	<td>XLP-WL3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E0.41</td> 
+	<td>INTERIOR LIGHTING CODE COMPLIANCE</td> 
+	<td>05/25/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 014</td> 
+	<td>NLDP-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.03.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E2.01.C</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - C</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 1032</td> 
+	<td>YHPB-RISER-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E6G.04P</td> 
+	<td>LEVEL G ENLARGED PLAN POWER BLOOD BANK & PROCESSING</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 12</td> 
+	<td>3OL1 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 720</td> 
+	<td>XLP-EL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 620</td> 
+	<td>XLP-EL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E61.04P</td> 
+	<td>LEVEL 1 ENLARGED PLAN POWER CATH LAB</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>E9.84</td> 
+	<td>LEVEL 8 EAST PANEL SCHEDULE - N/X/Y/Z</td> 
+	<td>03/15/17</td> 
+</tr> 
+<tr> 
+	<td>E61.03P</td> 
+	<td>LEVEL 1 ENLARGED PLAN POWER CVOR</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>E2.03.U</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - U</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E8.06</td> 
+	<td>ELECTRICAL DETAILS</td> 
+	<td>03/03/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 020</td> 
+	<td>ZLP-LG-01A</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E6.07</td> 
+	<td>ENLARGED MECHANICAL ROOM LEVEL G</td> 
+	<td>12/14/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 152</td> 
+	<td>YOR-EL1-05</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 808</td> 
+	<td>XHP-WL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.62</td> 
+	<td>LEVEL 6 WEST PANEL SCHEDULES - N/X/Y/Z</td> 
+	<td>03/15/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 821</td> 
+	<td>YHP-EL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.74</td> 
+	<td>LEVEL 7 EAST PANEL SCHEDULES - N/X/Y/Z</td> 
+	<td>03/15/17</td> 
+</tr> 
+<tr> 
+	<td>E62.04P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER TMT (AII)</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E66.04P</td> 
+	<td>LEVEL 6 ENLARGED PLAN POWER MS/IC ACC PATIENT ROOM</td> 
+	<td>04/27/16</td> 
+</tr> 
+<tr> 
+	<td>E62.03L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING BEHAVIORAL HEALTH</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 051</td> 
+	<td>YHP-ELG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 111</td> 
+	<td>ZLP-WL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.24</td> 
+	<td>LEVEL 2 EAST PANEL SCHEDULES -YLDP</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>E2.01.L</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - L</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 035</td> 
+	<td>XLP-WLG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.0GN</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G NORTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E1.01C</td> 
+	<td>ELECTRICAL SITE PLAN - NORTHWEST</td> 
+	<td>11/22/16</td> 
+</tr> 
+<tr> 
+	<td>E2.02.M</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - M</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E0.05</td> 
+	<td>SITE LIGHT FIXTURE SCHEDULE &  LIGHTING CONTROL</td> 
+	<td>12/06/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 502</td> 
+	<td>NLP-WL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.01.J.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SECTOR - J</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 514</td> 
+	<td>NLP-EL5-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.09L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING ED RAD</td> 
+	<td>12/29/16</td> 
+</tr> 
+<tr> 
+	<td>E9.00</td> 
+	<td>LOAD SUMMARIES / MAINS</td> 
+	<td>03/14/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 206</td> 
+	<td>YLDP-WL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E6.66</td> 
+	<td>ENLARGED EXISTING HOSPITAL TI FIRE ALARM PLANS</td> 
+	<td>07/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 038</td> 
+	<td>ZHP-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.20</td> 
+	<td>LIGHTNING PROTECTION PLAN - TOWER ROOF</td> 
+	<td>03/23/16</td> 
+</tr> 
+<tr> 
+	<td>E0.07</td> 
+	<td>SITE PANEL SCHEDULES</td> 
+	<td>02/27/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 1023</td> 
+	<td>YLPB-RISER-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03.F</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.02.E</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E8.03</td> 
+	<td>ELECTRICAL DETAILS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 1022</td> 
+	<td>YHPB-RISER-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.02.F</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E8.04</td> 
+	<td>ELECTRICAL DETAILS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E61.02L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING ROBOTIC OR</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.A</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - A</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 610</td> 
+	<td>YHP-WL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.16</td> 
+	<td>LEVEL 1 EAST PANEL SCHEDULES - YLDP</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.D</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - D</td> 
+	<td>03/30/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 519</td> 
+	<td>XHP-EL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 22</td> 
+	<td>POH2 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.09P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER ED RAD</td> 
+	<td>12/29/16</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.A.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - A</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E6.63</td> 
+	<td>ENLARGED EXISTING HOSPITAL TI LIGHTING PLANS</td> 
+	<td>07/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 315</td> 
+	<td>XLP-EL3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.15</td> 
+	<td>LEVEL 1 EAST PANEL SCHEDULES - NLDP</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 162</td> 
+	<td>YOR-EL1-16</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E66.01P</td> 
+	<td>LEVEL 6 ENLARGED PLAN POWER MS/IC AII PATIENT ROOM</td> 
+	<td>07/07/16</td> 
+</tr> 
+<tr> 
+	<td>E2.01.C ALT</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - C ALT</td> 
+	<td>02/17/17</td> 
+</tr> 
+<tr> 
+	<td>E2.01.D.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - D</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel PKG 02</td> 
+	<td>PKG-HP-L1-01 (EXIST)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.11P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER GIFT SHOP</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E9.32</td> 
+	<td>LEVEL 3 PANEL SCHEDULES - OFFICE</td> 
+	<td>03/16/17</td> 
+</tr> 
+<tr> 
+	<td>E62.10L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING CAFÉ</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 396.1</td> 
+	<td>MSB (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 422</td> 
+	<td>ZLP-EL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03.A.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - A</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 16.1</td> 
+	<td>2OZH (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 419</td> 
+	<td>XHP-EL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E66.03L</td> 
+	<td>LEVEL 6 ENLARGED PLAN LIGHTING MS/IC PATIENT ROOM</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.01.R</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - R</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.03.J.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 SECTOR - J</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 052</td> 
+	<td>ZHP-ELG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 228</td> 
+	<td>YLP-EL2-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.29P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER GAMMA CAMERA 1 AND 2</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>E3.02.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E2.06.F</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 6 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E62.24P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER GEN RAD</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>E6.68</td> 
+	<td>ENLARGED EXISTING HOSPITAL TI FIRE ALARM PLANS</td> 
+	<td>07/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 119</td> 
+	<td>YOR-WL1-04</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 718</td> 
+	<td>NHP-EL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.03.J</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 SECTOR - J</td> 
+	<td>04/07/17</td> 
+</tr> 
+<tr> 
+	<td>E61.15L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING CNTRL TRANS, BIOMED</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E6.03</td> 
+	<td>ENLARGED ELECTRICAL ROOM PLANS LEVELS 4 - 8</td> 
+	<td>02/01/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 38</td> 
+	<td>2NA (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03.M</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - M</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 105</td> 
+	<td>YLP-WL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 39</td> 
+	<td>HSL1 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.035.E</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3.5 SECTOR - E</td> 
+	<td>02/16/17</td> 
+</tr> 
+<tr> 
+	<td>E2.01.J</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - J</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E2.08.E</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 8 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.C</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - C</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.05N</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 5</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 822</td> 
+	<td>ZLP-EL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 227</td> 
+	<td>YLP-EL2-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.30P</td> 
+	<td>LEVEL 2 ENLARGED POWER PLAN SPECT CT</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 820</td> 
+	<td>XLP-EL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.26E</td> 
+	<td>LEVEL 2 EQUIPMENT DETAILS FLUORO 2</td> 
+	<td>01/12/17</td> 
+</tr> 
+<tr> 
+	<td>E3.06N</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 6</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.B</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - B</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E62.05P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER TMT</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 32</td> 
+	<td>2CB1 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.02.V</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - V</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E2.01.V</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - V</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E5.15</td> 
+	<td>EXISTING ORTHO & PARKING GARAGE RISER DIAGRAM</td> 
+	<td>12/06/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 0.1A</td> 
+	<td>SWGR-LG-01A</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 304</td> 
+	<td>WHP-L3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.08N</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 8</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 313</td> 
+	<td>ZLP-WL3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.81</td> 
+	<td>LEVEL 8 WEST PANEL SCHEDULES - NLDP/YLDP</td> 
+	<td>03/14/17</td> 
+</tr> 
+<tr> 
+	<td>E9.13</td> 
+	<td>LEVEL 1 WEST OR PANEL SCHEDULES - YOR</td> 
+	<td>03/14/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 158</td> 
+	<td>YOR-EL1-11</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 126</td> 
+	<td>YOR-WL1-11</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 232</td> 
+	<td>XLP-EL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E5.11</td> 
+	<td>GROUNDING RISER DIAGRAMS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E5.08</td> 
+	<td>EXISTING HOSPITAL RISER DIAGRAMS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 420</td> 
+	<td>XLP-EL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E61.05L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING CATH LAB 2</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.M</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - M</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E5.12</td> 
+	<td>FIRE ALARM RISER DIAGRAM</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 410</td> 
+	<td>YHP-WL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.18</td> 
+	<td>LEVEL 1 EAST OR PANEL SCHEDULES - YOR</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 903</td> 
+	<td>ZHDP-EL9-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 412</td> 
+	<td>NLDP-EL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.01.A.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - A</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E4.04N</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL 4</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E6G.06P</td> 
+	<td>LEVEL G ENLARGED PLAN POWER MICROBIOLOGY & PATHOLOGY</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.035.J.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3.5 SECTOR - J</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G</td> 
+	<td>07/17/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 15</td> 
+	<td>3OXL (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.27L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING ECHO</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 16</td> 
+	<td>2OZH (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 401</td> 
+	<td>NLDP-WL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 024</td> 
+	<td>WLP-LG-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.02</td> 
+	<td>LEVELS G-2 RISER SUMMARIES - N/Y</td> 
+	<td>03/14/17</td> 
+</tr> 
+<tr> 
+	<td>E62.21E</td> 
+	<td>LEVEL 2 EQUIPMENT DETAILS CT ROOMS 1, 2, & 3</td> 
+	<td>02/28/17</td> 
+</tr> 
+<tr> 
+	<td>E3.08.F</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 8 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E9.44</td> 
+	<td>LEVEL 4 EAST PANEL SCHEDULES - N/X/Y/Z</td> 
+	<td>03/16/17</td> 
+</tr> 
+<tr> 
+	<td>E9.11</td> 
+	<td>LEVEL 1 WEST PANEL SCHEDULES - YLDP</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 721</td> 
+	<td>YHP-EL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 719</td> 
+	<td>XHP-EL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.02.A.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - A</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E62.06P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER RESUS</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 312</td> 
+	<td>XHP-EL3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.29L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING GAMMA ROOM</td> 
+	<td>01/05/17</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.J</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - J</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E3.03.F</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E8.01</td> 
+	<td>ELECTRICAL DETAILS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 001</td> 
+	<td>NSWBD-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.035.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3.5</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 302</td> 
+	<td>ZSWBD-L3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.11EX</td> 
+	<td>LEVEL 1 EXISTING HOSPITAL DIST PANEL SCHEDULES</td> 
+	<td>04/13/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 143</td> 
+	<td>XHP-EL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E8.02</td> 
+	<td>ELECTRICAL DETAILS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E3.03.A.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 SECTOR - A</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 157</td> 
+	<td>YOR-EL1-10</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 145</td> 
+	<td>XLP-EL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E6G.01L</td> 
+	<td>LEVEL G ENLARGED PLAN LIGHTING KITCHEN</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 397</td> 
+	<td>MDP (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 0.5.1</td> 
+	<td>ZSWBD-LR-01 Load Shed</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.01.R</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SECTOR - R</td> 
+	<td>03/27/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 09.1</td> 
+	<td>2OXH (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.035.A.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3.5 SECTOR - A</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E9.61</td> 
+	<td>LEVEL 6 WEST PANEL SCHEDULES - NLDP/YLDP</td> 
+	<td>03/15/17</td> 
+</tr> 
+<tr> 
+	<td>E2.09.E</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 9 (ROOF) SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.01.D.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SECTOR - C</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 517</td> 
+	<td>YLP-EL5-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 11</td> 
+	<td>3OYL1 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E61.05P</td> 
+	<td>LEVEL 1 ENLARGED PLAN POWER CATH LAB 2</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 117</td> 
+	<td>YOR-WL1-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.G0</td> 
+	<td>LEVEL G SWITCHBOARD SCHEDULES - N/Y/Z</td> 
+	<td>03/14/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 120</td> 
+	<td>YOR-WL1-05</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.02.U</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - U</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 810</td> 
+	<td>YHP-WL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E64.10P</td> 
+	<td>LEVEL 4 ENLARGED PLAN POWER RESPIRATORY THERAPY</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E9.10EX</td> 
+	<td>LEVEL 1 EXISTING HOSPITAL SWITCHBOARD SCHEDULES</td> 
+	<td>04/13/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 407</td> 
+	<td>NHP-WL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E61.12P</td> 
+	<td>LEVEL 1 ENLARGED PLAN POWER PACU & STAGE 2 NURSE WORK STATION</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel CC 22</td> 
+	<td>CC-EHP-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.02L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING TRIAGE</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E61.11L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING PACU PHASE 1 & AII PHASE 1</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 214</td> 
+	<td>WHP-WL2-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.G3</td> 
+	<td>LEVEL G PANEL SCHEDULES - ZLDP/WLP</td> 
+	<td>03/24/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 025</td> 
+	<td>NLDP-WLG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 026</td> 
+	<td>NLP-WLG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.01.Q</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - Q</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 44</td> 
+	<td>2OL1 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 017</td> 
+	<td>NHP-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 503</td> 
+	<td>NLP-WL5-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.01.B</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SECTOR - B</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.01S</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SOUTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.B</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - B</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 906</td> 
+	<td>XLP-EL9-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.53</td> 
+	<td>LEVEL 5 EAST PANEL SCHEDULES - NLDP/YLDP</td> 
+	<td>03/16/17</td> 
+</tr> 
+<tr> 
+	<td>E5.09</td> 
+	<td>EXISTING HARLOW BLDG RISER DIAGRAM</td> 
+	<td>08/11/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 26</td> 
+	<td>L1NA (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 01.1</td> 
+	<td>1OH (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 39.1</td> 
+	<td>HSL1 (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 218</td> 
+	<td>NLDP-EL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 1031</td> 
+	<td>NLPB-RISER-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.02S</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SOUTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 415</td> 
+	<td>YLDP-EL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E8.10</td> 
+	<td>ELECTRICAL DETAILS</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 714</td> 
+	<td>NLP-EL7-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 219</td> 
+	<td>NLP-EL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 1020</td> 
+	<td>NHPB-RISER-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E0.01</td> 
+	<td>ELECTRICAL LEGENDS AND ABBREVIATIONS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E2.03.K</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - K</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 622</td> 
+	<td>ZLP-EL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03.L</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - L</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 213</td> 
+	<td>WHP-WL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 216</td> 
+	<td>XLP-WL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.10N</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 10</td> 
+	<td>12/07/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 303</td> 
+	<td>ZSWBD-L3-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 003</td> 
+	<td>YSWBD-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E61.01L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING GEN OR</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 521</td> 
+	<td>YHP-EL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 019</td> 
+	<td>ZLDP-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 233</td> 
+	<td>YHP-EL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E4.01N</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL 1 NORTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E4.0GS</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL G SOUTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 20</td> 
+	<td>POXH (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 09</td> 
+	<td>2OXH (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.D.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - D</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 08</td> 
+	<td>2OYL3 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 21</td> 
+	<td>POH1 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel PKG 01.1</td> 
+	<td>PKG-SWBD-01 (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 030</td> 
+	<td>NHP-WLG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 045</td> 
+	<td>YLP-ELG-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.01</td> 
+	<td>LOAD SUMMARIES - GENS</td> 
+	<td>03/14/17</td> 
+</tr> 
+<tr> 
+	<td>E3.10.F</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 10 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel PKG 01</td> 
+	<td>PKG-SWBD-01 (EXIST)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 149</td> 
+	<td>YOR-EL1-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.G4</td> 
+	<td>LEVEL G WEST PANEL SCHEDULES - NLDP/YLDP</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 807</td> 
+	<td>NHP-WL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.30E</td> 
+	<td>LEVEL 2 EQUIPMENT DETAILS SPECT CT</td> 
+	<td>01/12/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 150</td> 
+	<td>YOR-EL1-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 46.1</td> 
+	<td>2NC (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 317</td> 
+	<td>XHDP-L3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 38.1</td> 
+	<td>2NA (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E3.05.E</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 5 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 006</td> 
+	<td>ZSWBD-LG-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.035.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3.5</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.K</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - K</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 004</td> 
+	<td>YSWBD-LG-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.02.B</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR -B</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 42</td> 
+	<td>HRN (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 037</td> 
+	<td>YHP-WLG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.L</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - L</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.03.M</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 SECTOR - M</td> 
+	<td>11/08/16</td> 
+</tr> 
+<tr> 
+	<td>E4.0GN</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL G NORTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E0.520</td> 
+	<td>PANEL SCHEDULES</td> 
+	<td>03/14/17</td> 
+</tr> 
+<tr> 
+	<td>E1.01D</td> 
+	<td>ELECTRICAL SITE PLAN - SOUTHWEST</td> 
+	<td>11/22/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 03</td> 
+	<td>1OL2 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 139</td> 
+	<td>YLP-EL1-04</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.E</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.02N</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 NORTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.F</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 817</td> 
+	<td>YLP-EL8-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E1.01</td> 
+	<td>ELECTRICAL SITE PLAN - OVERALL</td> 
+	<td>11/22/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 231</td> 
+	<td>XHP-EL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 215</td> 
+	<td>XHP-WL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.03.A</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 SECTOR - A</td> 
+	<td>04/07/17</td> 
+</tr> 
+<tr> 
+	<td>E3.01.J</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SECTOR - J</td> 
+	<td>04/07/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 0.3B</td> 
+	<td>GSWGR-LG-01B</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E61.15P</td> 
+	<td>LEVEL 1 ENLARGED PLAN POWER CENTRAL TRANSPORT, BIOMED</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 0.2A</td> 
+	<td>SWGR-LG-02A</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 142</td> 
+	<td>ZLP-EL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 37</td> 
+	<td>NDPH (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 101</td> 
+	<td>NLP-WL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 1042</td> 
+	<td>YHPB-RISER-04</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.02.C</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - C</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E9.41</td> 
+	<td>LEVEL 4 WEST PANEL SCHEDULES - NLDP/YLDP</td> 
+	<td>03/16/17</td> 
+</tr> 
+<tr> 
+	<td>E6.69</td> 
+	<td>ENLARGED EXISTING HOSPITAL ELECTRICAL ROOMS</td> 
+	<td>08/08/16</td> 
+</tr> 
+<tr> 
+	<td>E0.06</td> 
+	<td>SITE PANEL SCHEDULES</td> 
+	<td>12/06/16</td> 
+</tr> 
+<tr> 
+	<td>E3.07N</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 7</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 211</td> 
+	<td>YLP-WL2-05</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.08N</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 8</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E5.07</td> 
+	<td>NORMAL POWER RISER DIAGRAM CANCER CARE</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E5.10</td> 
+	<td>METER RISER DIAGRAM</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 30</td> 
+	<td>2CB (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 19</td> 
+	<td>3OYH1 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.J.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - J</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 18</td> 
+	<td>3OZH (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.54</td> 
+	<td>LEVEL 5 EAST PANEL SCHEDULES - N/X/Y/Z</td> 
+	<td>03/16/17</td> 
+</tr> 
+<tr> 
+	<td>E2.09N</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 9</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 316</td> 
+	<td>ZLP-EL3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 604</td> 
+	<td>YLDP-WL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E6.65</td> 
+	<td>ENLARGED EXISTING HOSPITAL TI LIGHTING PLANS</td> 
+	<td>07/28/16</td> 
+</tr> 
+<tr> 
+	<td>E9.30CC</td> 
+	<td>LEVEL 3 CANCER CARE PANEL SCHEDULES</td> 
+	<td>04/06/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 403</td> 
+	<td>NLP-WL4-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 226</td> 
+	<td>YLP-EL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 416</td> 
+	<td>YLP-EL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 043</td> 
+	<td>YLDP-ELG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 039</td> 
+	<td>NLDP-ELG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel PKG 02.1</td> 
+	<td>PKG-HP-L1-01 (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E4.06N</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL 6</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E0.30</td> 
+	<td>MEDICAL EQUIPMENT CONNECTION SCHEDULE</td> 
+	<td>05/25/16</td> 
+</tr> 
+<tr> 
+	<td>E9.90</td> 
+	<td>LEVEL 9/10 PANEL SCHEDULES - X/Z</td> 
+	<td>03/26/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 14</td> 
+	<td>3OYL2 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel CC 26</td> 
+	<td>CC-ELP-L3-01</td> 
+	<td>05/24/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 13</td> 
+	<td>3OL2 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 02</td> 
+	<td>1OL1 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.J</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - J</td> 
+	<td>04/07/17</td> 
+</tr> 
+<tr> 
+	<td>E3.02.D.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2 SECTOR - D</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 046</td> 
+	<td>YLP-ELG-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.01.C ALT</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SECTOR - C ALT</td> 
+	<td>02/17/17</td> 
+</tr> 
+<tr> 
+	<td>E2.0GS</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SOUTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E2.01N</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 NORTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 121</td> 
+	<td>YOR-WL1-06</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.02.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 619</td> 
+	<td>XHP-EL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 390.1</td> 
+	<td>3LSB (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.04.F</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 4 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.04.E</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 4 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 390</td> 
+	<td>3LSB (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03.J.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 - SECTOR - J</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 36</td> 
+	<td>CDPH (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 144</td> 
+	<td>XLDP-EL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E6.61</td> 
+	<td>ENLARGED EXISTING HOSPITAL TI POWER PLANS</td> 
+	<td>07/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 0.4</td> 
+	<td>FS-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.01.D</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - D</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 902</td> 
+	<td>ZHDP-WL9-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 505</td> 
+	<td>YLP-WL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 803</td> 
+	<td>NLP-WL8-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 516</td> 
+	<td>YLP-EL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.02.Q</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - Q</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E64.04L</td> 
+	<td>LEVEL 4 ENLARGED PLAN LIGHTING CCU MED & CCU NOURISH</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 0.5</td> 
+	<td>ZSWBD-LR-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 013</td> 
+	<td>XPC-EXT-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E61.11P</td> 
+	<td>LEVEL 1 ENLARGED PLAN POWER PACU PHASE 1 & AII PHASE 1</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E8.11</td> 
+	<td>ELECTRICAL DETAILS</td> 
+	<td>03/09/17</td> 
+</tr> 
+<tr> 
+	<td>E61.10L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING PHASE 2 & HVC PHASE 1</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel CC 18</td> 
+	<td>CC-NSWBD-L3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 222</td> 
+	<td>NLP-EL2-04</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 122</td> 
+	<td>YOR-WL1-07</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E6.01</td> 
+	<td>ENLARGED MAIN ELECTRICAL ROOMS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E3.02N</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2 NORTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 616</td> 
+	<td>YLP-EL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 148</td> 
+	<td>YOR-EL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.01.C</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SECTOR - C</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.02S</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2 SOUTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E2.10.E</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 10 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E0.00</td> 
+	<td>ELECTRICAL SYMBOLS AND ABBREVIATIONS</td> 
+	<td>12/06/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 308</td> 
+	<td>NLP-WL3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.73</td> 
+	<td>LEVEL 7 EAST PANEL SCHEDULES - NLDP/YLDP</td> 
+	<td>03/15/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03N</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 NORTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 722</td> 
+	<td>ZLP-EL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03S</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SOUTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E9.82</td> 
+	<td>LEVEL 8 WEST PANEL SCHEDULES - N/X/Y/Z</td> 
+	<td>03/14/17</td> 
+</tr> 
+<tr> 
+	<td>E9.G0CC</td> 
+	<td>LEVEL G CANCER CARE PANEL SCHEDULES</td> 
+	<td>04/06/17</td> 
+</tr> 
+<tr> 
+	<td>E3.02.M</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2 SECTOR - M</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 812</td> 
+	<td>NLDP-EL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.02.L</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2 SECTOR - L</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.02.J.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - J</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E0.14</td> 
+	<td>PANELBOARD SCHEDULES</td> 
+	<td>12/05/16</td> 
+</tr> 
+<tr> 
+	<td>E5.01</td> 
+	<td>NORMAL POWER RISER DIAGRAMS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 815</td> 
+	<td>YLDP-EL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E1.00</td> 
+	<td>ELECTRICAL SITE PLAN</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E2.10N</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 10</td> 
+	<td>12/22/16</td> 
+</tr> 
+<tr> 
+	<td>E61.04L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING CATH LAB</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 005</td> 
+	<td>ZSWBD-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.G2</td> 
+	<td>LEVEL G MAIN PANEL SCHEDULES - NLDP/NHP/ULP</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>E3.035N</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3.5</td> 
+	<td>02/16/17</td> 
+</tr> 
+<tr> 
+	<td>E64.03P</td> 
+	<td>LEVEL 4 ENLARGED PLAN POWER CCU ACC PATIENT ROOM</td> 
+	<td>04/27/16</td> 
+</tr> 
+<tr> 
+	<td>E66.06L</td> 
+	<td>LEVEL 6 ENLARGED PLAN LIGHTING MS/IC CARE TEAM</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 050</td> 
+	<td>XLP-ELG-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E4.01S</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL 1 SOUTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E3.035.J.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3.5 SECTOR - J</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 230</td> 
+	<td>NHP-EL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 07</td> 
+	<td>2OYL2 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 041</td> 
+	<td>NLP-ELG-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.21</td> 
+	<td>LIGHTNING PROTECTION PLAN - PODIUM ROOF - OVERALL</td> 
+	<td>07/18/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 708</td> 
+	<td>XHP-WL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.J.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - J</td> 
+	<td>07/17/17</td> 
+</tr> 
+<tr> 
+	<td>E3.06.F</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 6 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 29.1</td> 
+	<td>NKL (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.02.J.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2 SECTOR - J</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 112</td> 
+	<td>XHP-WL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>ED1.00</td> 
+	<td>ELECTRICAL SITE DEMO PLAN</td> 
+	<td>02/02/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 113</td> 
+	<td>XLP-WL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 40</td> 
+	<td>H3N (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.M</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - M</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E6.60</td> 
+	<td>ENLARGED EXISTING HOSPITAL TI POWER PLANS</td> 
+	<td>07/28/16</td> 
+</tr> 
+<tr> 
+	<td>E3.01.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E2.07.E</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 7 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 806</td> 
+	<td>YLP-WL8-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E1.00.B</td> 
+	<td>ELECTRICAL SITE PLAN - SOUTHEAST</td> 
+	<td>05/06/16</td> 
+</tr> 
+<tr> 
+	<td>E2.03.D</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - D</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E9.23</td> 
+	<td>LEVEL 2 EAST PANEL SCHEDULES - NLDP</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>E9.63</td> 
+	<td>LEVEL 6 EAST PANEL SCHEDULES - NLDP/YLDP</td> 
+	<td>03/15/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03.C</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - C</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 0.2B</td> 
+	<td>SWGR-LG-02B</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.01L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING ED EYE TMT & BARIATRIC</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E8.00</td> 
+	<td>ELECTRICAL DETAILS</td> 
+	<td>11/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 016</td> 
+	<td>NLP-LG-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.03.B</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 SECTOR - B</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 1021</td> 
+	<td>NLPB-RISER-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.02.F</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E5.03</td> 
+	<td>CRITICAL RISER DIAGRAMS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 138</td> 
+	<td>YLP-EL1-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.83</td> 
+	<td>LEVEL 8 EAST PANEL SCHEDULES - NLDP/YLDP</td> 
+	<td>03/15/17</td> 
+</tr> 
+<tr> 
+	<td>E5.04</td> 
+	<td>ESSENTIAL & CRITICAL RISER DIAGRAMS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E61.03L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING CVOR</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 507</td> 
+	<td>NHP-WL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E1.00.A</td> 
+	<td>ELECTRICAL SITE PLAN - NORTHEAST</td> 
+	<td>05/06/16</td> 
+</tr> 
+<tr> 
+	<td>E2.035.F</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3.5 SECTOR - F</td> 
+	<td>02/16/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 510</td> 
+	<td>YHP-WL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E5.00</td> 
+	<td>NORMAL POWER RISER DIAGRAMS</td> 
+	<td>01/29/16</td> 
+</tr> 
+<tr> 
+	<td>E9.52</td> 
+	<td>LEVEL 5 WEST PANEL SCHEDULES - N/X/Y/Z</td> 
+	<td>03/16/17</td> 
+</tr> 
+<tr> 
+	<td>E3.02.J</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2 SECTOR - J</td> 
+	<td>04/07/17</td> 
+</tr> 
+<tr> 
+	<td>E6.06</td> 
+	<td>ENLARGED CHILLER YARD PLAN</td> 
+	<td>12/06/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 615</td> 
+	<td>YLDP-EL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E6.67</td> 
+	<td>ENLARGED EXISTING HOSPITAL TI FIRE ALARM PLANS</td> 
+	<td>07/28/16</td> 
+</tr> 
+<tr> 
+	<td>E2.035.A.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3.7 SECTOR - A</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E0.21</td> 
+	<td>LIGHT FIXTURE SCHEDULE</td> 
+	<td>05/05/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 703</td> 
+	<td>NLP-WL7-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E0.582E</td> 
+	<td>PANEL SCHEDULES</td> 
+	<td>03/14/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 705</td> 
+	<td>YLP-WL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 202</td> 
+	<td>NLP-WL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.01.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1</td> 
+	<td>07/17/17</td> 
+</tr> 
+<tr> 
+	<td>E3.01.M</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SECTOR - M</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E62.11L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING GIFT SHOP</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.07.F</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 7 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E9.03</td> 
+	<td>LEVELS 4-8 RISER SUMMARIES - N/Y</td> 
+	<td>03/24/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 307</td> 
+	<td>NLDP-WL3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E0.13</td> 
+	<td>PANELBOARD SCHEDULES</td> 
+	<td>12/05/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 301</td> 
+	<td>NSWBD-L3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 140</td> 
+	<td>NHP-EL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 204</td> 
+	<td>NLP-WL2-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 701</td> 
+	<td>NLDP-WL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.D.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - D</td> 
+	<td>07/17/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 01</td> 
+	<td>1OH (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.09.F</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 9 (ROOF) SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.09.E</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 9 (ROOF) SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E4.10N</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL 10 (HELIPAD)</td> 
+	<td>10/14/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 153</td> 
+	<td>YOR-EL1-06</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 621</td> 
+	<td>YHP-EL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.08P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER ED CARE TEAM</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 819</td> 
+	<td>XHP-EL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 396</td> 
+	<td>MSB (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.01P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER ED EYE TMT & BARIATRIC</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E6.09</td> 
+	<td>ENLARGED IDF ROOM PLANS LEVELS 4 - 8</td> 
+	<td>03/15/17</td> 
+</tr> 
+<tr> 
+	<td>E61.20L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING ADMIT /PT. ACCESS</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.03.D.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 SECTOR - D</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 135</td> 
+	<td>YLDP-EL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 133</td> 
+	<td>NLP-EL1-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 137</td> 
+	<td>YLP-EL1-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 33</td> 
+	<td>2LSA (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E6.62</td> 
+	<td>ENLARGED EXISTING HOSPITAL TI POWER PLANS</td> 
+	<td>07/28/16</td> 
+</tr> 
+<tr> 
+	<td>E2.01.K</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - K</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 34</td> 
+	<td>2CA (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 022</td> 
+	<td>ZLP-LG-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 134</td> 
+	<td>NLP-EL1-04</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.05.F</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 5 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 220</td> 
+	<td>NLP-EL2-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 108</td> 
+	<td>YLP-WL1-04</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 160</td> 
+	<td>YOR-EL1-14</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.05.E</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 5 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 107</td> 
+	<td>YLP-WL1-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 802</td> 
+	<td>NLP-WL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 128</td> 
+	<td>YOR-WL1-14</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 805</td> 
+	<td>YLP-WL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E64.05L</td> 
+	<td>LEVEL 4 ENLARGED PLAN LIGHTING CCU CARE TEAM</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.02.J</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - J</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 907</td> 
+	<td>XLP-EL9-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 034</td> 
+	<td>XLDP-WLG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.02.A</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2 SECTOR - A</td> 
+	<td>04/07/17</td> 
+</tr> 
+<tr> 
+	<td>E61.14P</td> 
+	<td>LEVEL 1 ENLARGED PLAN POWER PHARMACY</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E6.08</td> 
+	<td>ENLARGED IDF ROOM PLANS LEVELS 1 - 3.5</td> 
+	<td>03/15/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 036</td> 
+	<td>XLP-WLG-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel CC 27</td> 
+	<td>CC-NHP-LG-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 132</td> 
+	<td>NLP-EL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 136</td> 
+	<td>YLP-EL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 154</td> 
+	<td>YOR-EL1-07</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03.B</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - B</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 223</td> 
+	<td>NLP-EL2-05</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 1040</td> 
+	<td>NHPB-RISER-04</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E4.01.C ALT</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL 1 SECTOR - C ALT</td> 
+	<td>03/23/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03.E</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E61.06E</td> 
+	<td>LEVEL 1 EQUIPMENT DETAILS HYBRID OR</td> 
+	<td>01/12/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 210</td> 
+	<td>YLP-WL2-04</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.G8</td> 
+	<td>LEVEL G EAST PANEL SCHEDULES - N/X/Y/Z</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>E3.03N</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 NORTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 602</td> 
+	<td>NLP-WL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 605</td> 
+	<td>YLP-WL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E6G.06L</td> 
+	<td>LEVEL G ENLARGED PLAN LIGHTING MICROBIOLOGY & PATHOLOGY</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E62.03P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER BEHAVIORAL HEALTH</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 608</td> 
+	<td>XHP-WL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.03S</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 SOUTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E8.05</td> 
+	<td>ELECTRICAL DETAILS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 229</td> 
+	<td>YLP-EL2-04</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 512</td> 
+	<td>NLDP-EL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E4.09N</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL 9 (ROOF)</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E3.035.F</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3.5 SECTOR - F</td> 
+	<td>02/16/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 612</td> 
+	<td>NLDP-EL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 504</td> 
+	<td>YLDP-WL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.04N</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 4</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E2.05N</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 5</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 501</td> 
+	<td>NLDP-WL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 711</td> 
+	<td>ZLP-WL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 161</td> 
+	<td>YOR-EL1-15</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.07P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER ED MED/NOUR/SUPPLY</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.02.K</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2 SECTOR - K</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 1041</td> 
+	<td>NLPB-RISER-04</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 124</td> 
+	<td>YOR-WL1-09</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.25P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER FLUORO 1</td> 
+	<td>02/06/17</td> 
+</tr> 
+<tr> 
+	<td>E62.06L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING RESUS</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 394</td> 
+	<td>ES (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E66.05L</td> 
+	<td>LEVEL 6 ENLARGED PLAN LIGHTING MS/IC MED & MS/IC NOURISH</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E4.02S</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL 2 SOUTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E0.12</td> 
+	<td>MECHANICAL EQUIPMENT CONNECTION SCHEDULE</td> 
+	<td>05/25/16</td> 
+</tr> 
+<tr> 
+	<td>E9.G7</td> 
+	<td>LEVEL G EAST PANEL SCHEDULES - YLDP/X</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 1010</td> 
+	<td>NHPB-RISER-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 1030</td> 
+	<td>NHPB-RISER-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.04.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 4</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 506</td> 
+	<td>YLP-WL5-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.26P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER FLUORO 2</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 130</td> 
+	<td>YOR-WL1-16</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 031</td> 
+	<td>WHP-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 151</td> 
+	<td>YOR-EL1-04</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03.J</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - J</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 129</td> 
+	<td>YOR-WL1-15</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E66.02L</td> 
+	<td>LEVEL 6 ENLARGED PLAN LIGHTING BARIATRIC MS/IC PATIENT ROOM</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 710</td> 
+	<td>YHP-WL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 155</td> 
+	<td>YOR-EL1-08</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.20E</td> 
+	<td>LEVEL 2 ENLARGED EQUIPMENT PLAN MRI 1</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>E9.G6</td> 
+	<td>LEVEL G EAST PANEL SCHEDULES - NLDP</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>E61.13P</td> 
+	<td>LEVEL 1 ENLARGED PLAN POWER RADIAL LOUNGE</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.V</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - V</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 33.1</td> 
+	<td>2LSA (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.U</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - U</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E62.09E</td> 
+	<td>LEVEL 2 ENLARGED EQUIPMENT PLAN ED RAD</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 31.1</td> 
+	<td>2LSB (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.25</td> 
+	<td>LEVEL 2 EAST PANEL SCHEDULES - N/X/Y/Z</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 114</td> 
+	<td>YHP-WL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 015</td> 
+	<td>NLP-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 021</td> 
+	<td>ZLP-LG-01B</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 1033</td> 
+	<td>YLPB-RISER-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 613</td> 
+	<td>NLP-EL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.04N</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 4</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E65.10L</td> 
+	<td>LEVEL 5 ENLARGED PLAN LIGHTING HEMODIALYSIS</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E64.01L</td> 
+	<td>LEVEL 4 ENLARGED PLAN LIGHTING CCU AII PATIENT ROOM</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.03.A</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - A</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E6.04</td> 
+	<td>ENLARGED ELEVATOR MACHINE ROOMS</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>E9.14</td> 
+	<td>LEVEL 1 WEST OR PANEL SCHEDULES - YOR</td> 
+	<td>03/14/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 032</td> 
+	<td>XHP-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.06N</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 6</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 404</td> 
+	<td>YLDP-WL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.12</td> 
+	<td>LEVEL 1 WEST PANEL SCHEDULES - N/W/X/Y/Z</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>E3.03.D</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 SECTOR - D</td> 
+	<td>04/11/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 115</td> 
+	<td>YORLDP-WL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 509</td> 
+	<td>XLP-WL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.01.L</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SECTOR - L</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.02.L</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - L</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 511</td> 
+	<td>ZLP-WL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E0.31</td> 
+	<td>KITCHEN EQUIPMENT CONNECTION SCHEDULE</td> 
+	<td>07/25/16</td> 
+</tr> 
+<tr> 
+	<td>E9.71</td> 
+	<td>LEVEL 7 WEST PANEL SCHEDULES - NLDP/YLDP</td> 
+	<td>03/15/17</td> 
+</tr> 
+<tr> 
+	<td>E5.05</td> 
+	<td>OPTIONAL STAND-BY RISER DIAGRAMS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E61.06L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING HYBRID OR</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.K</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - K</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.F</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E61.10P</td> 
+	<td>LEVEL 1 ENLARGED PLAN POWER PHASE 2 & HVC PHASE 1</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 29</td> 
+	<td>NKL (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 28</td> 
+	<td>EQKL (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.035.D.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3.5 SECTOR - D</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E62.30L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING SPECT CT</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E6G.01P</td> 
+	<td>LEVEL G ENLARGED PLAN POWER  KITCHEN</td> 
+	<td>10/27/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 702</td> 
+	<td>NLP-WL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 023</td> 
+	<td>WLP-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.22P</td> 
+	<td>LEVEL 2 ENLARGED POWER PLAN CT ROOMS 2 & 3</td> 
+	<td>06/13/17</td> 
+</tr> 
+<tr> 
+	<td>E5.13</td> 
+	<td>DAS RISER DIAGRAM</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E3.07.E</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 7 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E1.00.C</td> 
+	<td>ELECTRICAL SITE PLAN - NORTHWEST</td> 
+	<td>05/06/16</td> 
+</tr> 
+<tr> 
+	<td>E62.21L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING CT ROOMS 1, 2, & 3</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.03.K</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 SECTOR - K</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 311</td> 
+	<td>XHP-WL3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 37.1</td> 
+	<td>NDPH (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.02.D.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - D</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 314</td> 
+	<td>XLP-WL3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E0.41</td> 
+	<td>INTERIOR LIGHTING CODE COMPLIANCE</td> 
+	<td>05/25/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 014</td> 
+	<td>NLDP-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.01.B</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - B</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.03.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E2.01.C</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - C</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 1032</td> 
+	<td>YHPB-RISER-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E6G.04P</td> 
+	<td>LEVEL G ENLARGED PLAN POWER BLOOD BANK & PROCESSING</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 620</td> 
+	<td>XLP-EL6-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.01.A.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SECTOR - A</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03.U</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - U</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E8.06</td> 
+	<td>ELECTRICAL DETAILS</td> 
+	<td>03/03/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03.Q</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - Q</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E6.07</td> 
+	<td>ENLARGED MECHANICAL ROOM LEVEL G</td> 
+	<td>12/14/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 152</td> 
+	<td>YOR-EL1-05</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 808</td> 
+	<td>XHP-WL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.62</td> 
+	<td>LEVEL 6 WEST PANEL SCHEDULES - N/X/Y/Z</td> 
+	<td>03/15/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 821</td> 
+	<td>YHP-EL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.74</td> 
+	<td>LEVEL 7 EAST PANEL SCHEDULES - N/X/Y/Z</td> 
+	<td>03/15/17</td> 
+</tr> 
+<tr> 
+	<td>E62.04P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER TMT (AII)</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E62.03L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING BEHAVIORAL HEALTH</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 051</td> 
+	<td>YHP-ELG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 029</td> 
+	<td>YLP-WLG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.24</td> 
+	<td>LEVEL 2 EAST PANEL SCHEDULES -YLDP</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>E2.01.L</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - L</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 035</td> 
+	<td>XLP-WLG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 027</td> 
+	<td>NLP-WLG-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.0GN</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G NORTH</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E1.01C</td> 
+	<td>ELECTRICAL SITE PLAN - NORTHWEST</td> 
+	<td>11/22/16</td> 
+</tr> 
+<tr> 
+	<td>E2.01.M</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - M</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.02.M</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - M</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 502</td> 
+	<td>NLP-WL5-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.17</td> 
+	<td>LEVEL 1 EAST PANEL SCHEDULES - N/W/X/Y/Z</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 816</td> 
+	<td>YLP-EL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.01.J.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SECTOR - J</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E62.09L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING ED RAD</td> 
+	<td>12/29/16</td> 
+</tr> 
+<tr> 
+	<td>E64.02L</td> 
+	<td>LEVEL 4 ENLARGED PLAN LIGHTING CCU PATIENT ROOM</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E9.00</td> 
+	<td>LOAD SUMMARIES / MAINS</td> 
+	<td>03/14/17</td> 
+</tr> 
+<tr> 
+	<td>E9.64</td> 
+	<td>LEVEL 6 EAST PANEL SCHEDULES - N/X/Y/Z</td> 
+	<td>03/15/17</td> 
+</tr> 
+<tr> 
+	<td>E6.66</td> 
+	<td>ENLARGED EXISTING HOSPITAL TI FIRE ALARM PLANS</td> 
+	<td>07/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 038</td> 
+	<td>ZHP-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.20</td> 
+	<td>LIGHTNING PROTECTION PLAN - TOWER ROOF</td> 
+	<td>03/23/16</td> 
+</tr> 
+<tr> 
+	<td>E0.07</td> 
+	<td>SITE PANEL SCHEDULES</td> 
+	<td>02/27/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 1023</td> 
+	<td>YLPB-RISER-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.035N</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3.5</td> 
+	<td>02/16/17</td> 
+</tr> 
+<tr> 
+	<td>E0.04</td> 
+	<td>SITE LIGHTING CODE COMPLIANCE</td> 
+	<td>02/27/17</td> 
+</tr> 
+<tr> 
+	<td>E8.03</td> 
+	<td>ELECTRICAL DETAILS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 1022</td> 
+	<td>YHPB-RISER-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.02.F</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E8.04</td> 
+	<td>ELECTRICAL DETAILS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E61.02L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING ROBOTIC OR</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.A</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - A</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E62.02P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER TRIAGE</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>E9.16</td> 
+	<td>LEVEL 1 EAST PANEL SCHEDULES - YLDP</td> 
+	<td>03/17/17</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.D</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - D</td> 
+	<td>03/30/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 22</td> 
+	<td>POH2 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.A.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - A</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.D</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - D</td> 
+	<td>04/07/17</td> 
+</tr> 
+<tr> 
+	<td>E6.63</td> 
+	<td>ENLARGED EXISTING HOSPITAL TI LIGHTING PLANS</td> 
+	<td>07/28/16</td> 
+</tr> 
+<tr> 
+	<td>E66.01P</td> 
+	<td>LEVEL 6 ENLARGED PLAN POWER MS/IC AII PATIENT ROOM</td> 
+	<td>07/07/16</td> 
+</tr> 
+<tr> 
+	<td>E2.01.C ALT</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - C ALT</td> 
+	<td>02/17/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 309</td> 
+	<td>NLP-WL3-02</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.01.D.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - D</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel PKG 02</td> 
+	<td>PKG-HP-L1-01 (EXIST)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E1.00.D</td> 
+	<td>ELECTRICAL SITE PLAN - SOUTHWEST</td> 
+	<td>05/06/16</td> 
+</tr> 
+<tr> 
+	<td>E62.11P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER GIFT SHOP</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E9.32</td> 
+	<td>LEVEL 3 PANEL SCHEDULES - OFFICE</td> 
+	<td>03/16/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 118</td> 
+	<td>YOR-WL1-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.05.F</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 5 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 396.1</td> 
+	<td>MSB (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 422</td> 
+	<td>ZLP-EL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03.A.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - A</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 16.1</td> 
+	<td>2OZH (REV)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E66.03L</td> 
+	<td>LEVEL 6 ENLARGED PLAN LIGHTING MS/IC PATIENT ROOM</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.01.R</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - R</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.03.J.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 SECTOR - J</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 018</td> 
+	<td>ULP-LG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 228</td> 
+	<td>YLP-EL2-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E62.29P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER GAMMA CAMERA 1 AND 2</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 209</td> 
+	<td>YLP-WL2-03</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.02.CC</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 2</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E2.06.F</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 6 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.C</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G SECTOR - C</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.06.E</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 6 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 06</td> 
+	<td>2OYL1 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E6.68</td> 
+	<td>ENLARGED EXISTING HOSPITAL TI FIRE ALARM PLANS</td> 
+	<td>07/28/16</td> 
+</tr> 
+<tr> 
+	<td>E2.02.D</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - D</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E64.03L</td> 
+	<td>LEVEL 4 ENLARGED PLAN LIGHTING ACC CCU PATIENT ROOM</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E64.04P</td> 
+	<td>LEVEL 4 ENLARGED PLAN POWER CCU MED & CCU NOURISH</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 718</td> 
+	<td>NHP-EL7-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.03.J</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 3 SECTOR - J</td> 
+	<td>04/07/17</td> 
+</tr> 
+<tr> 
+	<td>E61.20P</td> 
+	<td>LEVEL 1 ENLARGED PLAN POWER ADMIT /PT. ACCESS</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 109</td> 
+	<td>NHP-WL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E6.03</td> 
+	<td>ENLARGED ELECTRICAL ROOM PLANS LEVELS 4 - 8</td> 
+	<td>02/01/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 38</td> 
+	<td>2NA (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.03.M</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3 SECTOR - M</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 105</td> 
+	<td>YLP-WL1-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 39</td> 
+	<td>HSL1 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.035.E</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3.5 SECTOR - E</td> 
+	<td>02/16/17</td> 
+</tr> 
+<tr> 
+	<td>E2.01.J</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - J</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E2.08.E</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 8 SECTOR - E</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.C</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - C</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.05N</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 5</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 820</td> 
+	<td>XLP-EL8-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.06N</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 6</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E62.05P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER TMT</td> 
+	<td>03/18/16</td> 
+</tr> 
+<tr> 
+	<td>Panel EX 32</td> 
+	<td>2CB1 (EXISTING)</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.02.V</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 2 SECTOR - V</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>E5.15</td> 
+	<td>EXISTING ORTHO & PARKING GARAGE RISER DIAGRAM</td> 
+	<td>12/06/16</td> 
+</tr> 
+<tr> 
+	<td>E3.01.A</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SECTOR - A</td> 
+	<td>04/07/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 304</td> 
+	<td>WHP-L3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 313</td> 
+	<td>ZLP-WL3-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 201</td> 
+	<td>NLDP-WL2-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E9.81</td> 
+	<td>LEVEL 8 WEST PANEL SCHEDULES - NLDP/YLDP</td> 
+	<td>03/14/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 158</td> 
+	<td>YOR-EL1-11</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.01.F</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL 1 SECTOR - F</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 048</td> 
+	<td>XHP-ELG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E5.08</td> 
+	<td>EXISTING HOSPITAL RISER DIAGRAMS</td> 
+	<td>01/28/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 420</td> 
+	<td>XLP-EL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E61.05L</td> 
+	<td>LEVEL 1 ENLARGED PLAN LIGHTING CATH LAB 2</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.M</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - M</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 049</td> 
+	<td>XLP-ELG-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 903</td> 
+	<td>ZHDP-EL9-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>Panel 412</td> 
+	<td>NLDP-EL4-01</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E3.0G.L</td> 
+	<td>ELECTRICAL LIGHTING PLAN LEVEL G SECTOR - L</td> 
+	<td>10/19/16</td> 
+</tr> 
+<tr> 
+	<td>Panel 0.3B.1</td> 
+	<td>GSWGR-LG-01B Load Shed</td> 
+	<td>05/04/17</td> 
+</tr> 
+<tr> 
+	<td>E2.01.A.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 1 SECTOR - A</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E6G.06P</td> 
+	<td>LEVEL G ENLARGED PLAN POWER MICROBIOLOGY & PATHOLOGY</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E2.035.J.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL 3.5 SECTOR - J</td> 
+	<td>07/18/17</td> 
+</tr> 
+<tr> 
+	<td>E4.05N</td> 
+	<td>ELECTRICAL FIRE ALARM PLAN LEVEL 5</td> 
+	<td>05/04/16</td> 
+</tr> 
+<tr> 
+	<td>E2.0G.CC</td> 
+	<td>ELECTRICAL POWER PLAN LEVEL G</td> 
+	<td>07/17/17</td> 
+</tr> 
+<tr> 
+	<td>E62.27L</td> 
+	<td>LEVEL 2 ENLARGED PLAN LIGHTING ECHO</td> 
+	<td>12/19/16</td> 
+</tr> 
+<tr> 
+	<td>E62.28P</td> 
+	<td>LEVEL 2 ENLARGED PLAN POWER MICU</td> 
+	<td>12/19/16</td> 
+</tr> 
+</tbody></table>
+</div>
+</body>
+</html>
