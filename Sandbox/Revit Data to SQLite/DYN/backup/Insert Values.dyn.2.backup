@@ -1,7 +1,7 @@
-<Workspace Version="1.3.1.1736" X="-6060.612751267" Y="2235.5377917457" zoom="1.06776623683314" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="10000" HasRunWithoutCrash="True">
+<Workspace Version="1.3.0.875" X="-8708.04992071729" Y="3174.46552932012" zoom="1.08007607679156" ScaleFactor="1" Name="Home" Description="" RunType="Manual" RunPeriod="10000" HasRunWithoutCrash="True">
   <NamespaceResolutionMap />
   <Elements>
-    <DSRevitNodesUI.Categories guid="9c59348f-52a4-4aa8-b4b9-f0982e5e0952" type="DSRevitNodesUI.Categories" nickname="Categories" x="5696.65358776026" y="-1520.18658248271" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="5:DuctTerminal" />
+    <DSRevitNodesUI.Categories guid="9c59348f-52a4-4aa8-b4b9-f0982e5e0952" type="DSRevitNodesUI.Categories" nickname="Categories" x="5696.65358776026" y="-1520.18658248271" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false" index="166:DuctCurves" />
     <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="b9f62f22-08e3-44b7-84ef-8bc685a0440e" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Element.Parameters" x="6451.18770054702" y="-1492.57873109307" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="RevitNodes.dll" function="Revit.Elements.Element.Parameters">
       <PortInfo index="0" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
@@ -232,17 +232,17 @@ OUT = sqlCommand</Script>
     <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="af567617-315f-4b53-9a60-a885277cf9bd" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="5949.8232432862" y="-2379.38922180053" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="tableName;" ShouldFocus="false">
       <PortInfo index="0" default="False" />
     </Dynamo.Graph.Nodes.CodeBlockNodeModel>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="ee128686-19e6-441d-b638-9be057452344" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Command.SQLite_Command" x="9217.86054572267" y="-2905.47770275529" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true" assembly="..\..\..\..\..\AppData\Roaming\Dynamo\Dynamo Revit\1.3\packages\Slingshot! for Dynamo\bin\Slingshot.dll" function="Database.Command.SQLite_Command@string,bool,string[]">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="ee128686-19e6-441d-b638-9be057452344" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="Command.SQLite_Command" x="9212.42802387785" y="-2551.15655576562" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="true" assembly="..\..\..\..\..\BIM\Dynamo\Custom Nodes\Slingshot! for Dynamo\bin\Slingshot.dll" function="Database.Command.SQLite_Command@string,bool,string[]">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="False" />
       <PortInfo index="2" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <CoreNodeModels.Input.Filename guid="242199ae-0818-4234-9394-7a5ee23996d9" type="CoreNodeModels.Input.Filename" nickname="File Path" x="9050.18770142866" y="-3010.75532861738" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+    <CoreNodeModels.Input.Filename guid="242199ae-0818-4234-9394-7a5ee23996d9" type="CoreNodeModels.Input.Filename" nickname="File Path" x="9044.75517958384" y="-2656.43418162771" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
       <System.String>..\DB\Mechanical.db</System.String>
-      <HintPath>C:\Users\J. Merlan\Dev Lab\RvtSql\Sandbox\Revit Data to SQLite\DB\Mechanical.db</HintPath>
+      <HintPath>C:\Users\JRMerlan\Documents\GitHub\RvtSql\Sandbox\Revit Data to SQLite\DB\Mechanical.db</HintPath>
     </CoreNodeModels.Input.Filename>
-    <CoreNodeModels.Input.BoolSelector guid="af4978d8-1304-4dd3-a278-765ce11e1ee2" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="9028.2180658768" y="-2912.99045041158" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
-      <System.Boolean>True</System.Boolean>
+    <CoreNodeModels.Input.BoolSelector guid="af4978d8-1304-4dd3-a278-765ce11e1ee2" type="CoreNodeModels.Input.BoolSelector" nickname="Boolean" x="9022.78554403198" y="-2558.66930342191" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="True" IsFrozen="false" isPinned="false">
+      <System.Boolean>False</System.Boolean>
     </CoreNodeModels.Input.BoolSelector>
     <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="06fc78cf-4f9c-41c6-8627-37713ea361f4" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="CSV.WriteToFile" x="8731.19912398292" y="-1690.5094462719" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.IO.CSV.WriteToFile@string,var[][]">
       <PortInfo index="0" default="False" />
@@ -320,42 +320,25 @@ from Autodesk.DesignScript.Geometry import *
 listIn = IN[0]
 tableName = IN[1]
 
-sqlCommand = "BEGIN TRANSACTION; \n"
+sqlCommand = ""
 questionMarks = ""
 listOfColumns = []
 columnNames = ""
 columnValues = ""
 
+sqlCommand += "INSERT INTO " + tableName
 
-for index1, i1 in enumerate(listIn):
-	sqlCommand += "INSERT INTO " + tableName + " ("
-	for index2, i2 in enumerate(listIn[index1]):
-		sqlCommand += '"' + listIn[index1][index2][0] + '", '
-	sqlCommand = sqlCommand[:-2]
-	sqlCommand += ") \n VALUES ("
-	for index2, i2 in enumerate(listIn[index1]):
-		listIn[index1][index2][1] = listIn[index1][index2][1].replace("\"", " in")
-		listIn[index1][index2][1] = listIn[index1][index2][1].replace("\'", " ft")
-		listIn[index1][index2][1] = listIn[index1][index2][1].replace("ø", " Diam")
-		sqlCommand += '"' + listIn[index1][index2][1] + '\", '
-	sqlCommand = sqlCommand[:-2]
-	sqlCommand += "); \n"
-	
-sqlCommand += "COMMIT;"
-	
-OUT = sqlCommand
-
-	#sqlCommand += columnNames + "\n"
+#for listIndex, i in enumerate(listIn):
 #	for pIndex, i in enumerate(listIn[listIndex]):
 #		columnNames += listIn[listIndex][pIndex][0] + '"' + ', '
 		
-#for listIndex, i in enumerate(listIn):
-#	for pIndex, i in enumerate(listIn[listIndex]):
-#		for param, i in enumerate(listIn[listIndex][pIndex]):
-#			listOfColumns.append('"' + listIn[listIndex][pIndex][0] + '"' + ', ')
-
+for listIndex, i in enumerate(listIn):
+	for pIndex, i in enumerate(listIn[listIndex]):
+		listOfColumns.append('"' + listIn[listIndex][pIndex][0] + '"' + ', ')
 
 #columnNames = columnNames[:-2]
+
+sqlCommand += " (" + columnNames + ") \n"
 
 #for listIndex, i in enumerate(listIn):
 	# Catch and replace certain characters that break the string
@@ -376,16 +359,19 @@ OUT = sqlCommand
 
 
 #sqlCommand += "VALUES (" + questionMarks + "), " + columnValues
-#sqlCommand += "VALUES (" + columnValues + ")"</Script>
+#sqlCommand += "VALUES (" + columnValues + ")"
+
+#Assign your output to the OUT variable.
+OUT = listOfColumns</Script>
     </PythonNodeModels.PythonNode>
-    <CoreNodeModels.Watch guid="48b45785-24c4-44ab-bb5c-63ee2a69837b" type="CoreNodeModels.Watch" nickname="Watch" x="8685.69694917193" y="-2852.76141106028" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
+    <CoreNodeModels.Watch guid="48b45785-24c4-44ab-bb5c-63ee2a69837b" type="CoreNodeModels.Watch" nickname="Watch" x="8689.86332235313" y="-2862.48294848308" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false">
       <PortInfo index="0" default="False" />
     </CoreNodeModels.Watch>
-    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="12c08f6c-9aff-4f0d-aeb7-0261cdf03e2d" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="File.WriteText" x="8775.13852884883" y="-3037.39934249791" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.IO.File.WriteText@string,string">
+    <Dynamo.Graph.Nodes.ZeroTouch.DSFunction guid="12c08f6c-9aff-4f0d-aeb7-0261cdf03e2d" type="Dynamo.Graph.Nodes.ZeroTouch.DSFunction" nickname="File.WriteText" x="9069.5418861226" y="-2970.26791807097" isVisible="true" isUpstreamVisible="true" lacing="Shortest" isSelectedInput="False" IsFrozen="false" isPinned="false" assembly="DSCoreNodes.dll" function="DSCore.IO.File.WriteText@string,string">
       <PortInfo index="0" default="False" />
       <PortInfo index="1" default="False" />
     </Dynamo.Graph.Nodes.ZeroTouch.DSFunction>
-    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="2f4c9121-0d42-44d6-889d-b9678a3da93d" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="8527.87760074753" y="-3116.95437557741" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;temp.txt&quot;;" ShouldFocus="false" />
+    <Dynamo.Graph.Nodes.CodeBlockNodeModel guid="2f4c9121-0d42-44d6-889d-b9678a3da93d" type="Dynamo.Graph.Nodes.CodeBlockNodeModel" nickname="Code Block" x="8824.85546159748" y="-3022.7906636006" isVisible="true" isUpstreamVisible="true" lacing="Disabled" isSelectedInput="False" IsFrozen="false" isPinned="false" CodeText="&quot;temp.txt&quot;;" ShouldFocus="false" />
   </Elements>
   <Connectors>
     <Dynamo.Graph.Connectors.ConnectorModel start="9c59348f-52a4-4aa8-b4b9-f0982e5e0952" start_index="0" end="265aa3c4-9cb6-4d58-a91d-b26d249f6b7f" end_index="0" portType="0" />
@@ -419,6 +405,7 @@ OUT = sqlCommand
     <Dynamo.Graph.Connectors.ConnectorModel start="7d791b51-fa99-4ba8-9bb2-3adbc6112ed0" start_index="4" end="5b569c46-ad9f-4d95-9f31-7465848adc3a" end_index="5" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="48ac7af0-c379-4fa8-80f9-66b0e2c87368" start_index="0" end="b667a665-4d10-4bff-a2f3-acf1eb3aea4f" end_index="0" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="c3820275-ed2a-4d0e-8f5d-3808622e3f78" start_index="0" end="3160ef7e-ec0e-4126-a922-2c5c08936af2" end_index="0" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="3160ef7e-ec0e-4126-a922-2c5c08936af2" start_index="0" end="ee128686-19e6-441d-b638-9be057452344" end_index="2" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="af567617-315f-4b53-9a60-a885277cf9bd" start_index="0" end="c3820275-ed2a-4d0e-8f5d-3808622e3f78" end_index="1" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="af567617-315f-4b53-9a60-a885277cf9bd" start_index="0" end="08eb58bc-dfb2-4972-8222-1091d91e4407" end_index="1" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="242199ae-0818-4234-9394-7a5ee23996d9" start_index="0" end="ee128686-19e6-441d-b638-9be057452344" end_index="0" portType="0" />
@@ -427,16 +414,16 @@ OUT = sqlCommand
     <Dynamo.Graph.Connectors.ConnectorModel start="d609f85f-49d5-49d7-867a-ff1478aa59e0" start_index="0" end="df46c5f3-6467-4ecb-9c65-c431942b3e7e" end_index="0" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="df46c5f3-6467-4ecb-9c65-c431942b3e7e" start_index="0" end="08eb58bc-dfb2-4972-8222-1091d91e4407" end_index="0" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="08eb58bc-dfb2-4972-8222-1091d91e4407" start_index="0" end="48b45785-24c4-44ab-bb5c-63ee2a69837b" end_index="0" portType="0" />
-    <Dynamo.Graph.Connectors.ConnectorModel start="48b45785-24c4-44ab-bb5c-63ee2a69837b" start_index="0" end="ee128686-19e6-441d-b638-9be057452344" end_index="2" portType="0" />
+    <Dynamo.Graph.Connectors.ConnectorModel start="48b45785-24c4-44ab-bb5c-63ee2a69837b" start_index="0" end="12c08f6c-9aff-4f0d-aeb7-0261cdf03e2d" end_index="1" portType="0" />
     <Dynamo.Graph.Connectors.ConnectorModel start="2f4c9121-0d42-44d6-889d-b9678a3da93d" start_index="0" end="12c08f6c-9aff-4f0d-aeb7-0261cdf03e2d" end_index="0" portType="0" />
   </Connectors>
   <Notes />
   <Annotations>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="8ac9e161-cadb-4883-b05e-7a88d3fdf013" annotationText="Get all elements and their parameters" left="6197.82275262702" top="-1542.67852085955" width="504.864947919999" height="143.09978976648" fontSize="30" InitialTop="-1496.67852085955" InitialHeight="484.790074722147" TextblockHeight="36" backgrouund="#FF48B9FF">
+    <Dynamo.Graph.Annotations.AnnotationModel guid="8ac9e161-cadb-4883-b05e-7a88d3fdf013" annotationText="Get all elements and their parameters" left="6197.82275262702" top="-1542.67852085955" width="505.364947919999" height="143.09978976648" fontSize="30" InitialTop="-1496.67852085955" InitialHeight="484.790074722147" TextblockHeight="36" backgrouund="#FF48B9FF">
       <Models ModelGuid="b9f62f22-08e3-44b7-84ef-8bc685a0440e" />
       <Models ModelGuid="265aa3c4-9cb6-4d58-a91d-b26d249f6b7f" />
     </Dynamo.Graph.Annotations.AnnotationModel>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="1f662bcd-726d-44cf-ba97-fb7d55cf9fc7" annotationText="Set Category" left="5686.65358776026" top="-1566.18658248271" width="188" height="139" fontSize="30" InitialTop="-1520.18658248271" InitialHeight="123" TextblockHeight="36" backgrouund="#FFFFB8D8">
+    <Dynamo.Graph.Annotations.AnnotationModel guid="1f662bcd-726d-44cf-ba97-fb7d55cf9fc7" annotationText="Set Category" left="5686.65358776026" top="-1566.18658248271" width="186" height="139" fontSize="30" InitialTop="-1520.18658248271" InitialHeight="123" TextblockHeight="36" backgrouund="#FFFFB8D8">
       <Models ModelGuid="9c59348f-52a4-4aa8-b4b9-f0982e5e0952" />
     </Dynamo.Graph.Annotations.AnnotationModel>
     <Dynamo.Graph.Annotations.AnnotationModel guid="0afcb002-947b-4952-b80f-bc2a43927f33" annotationText="Insert Element Id's to beginning of lists" left="6206.71536502778" top="-2216.90195509201" width="919.06399040207" height="565.26147776271" fontSize="30" InitialTop="-2170.90195509201" InitialHeight="410.794833829366" TextblockHeight="36" backgrouund="#FFC1D676">
@@ -450,11 +437,11 @@ OUT = sqlCommand
       <Models ModelGuid="509231b7-d619-4900-8bbc-b80cf8387e82" />
       <Models ModelGuid="e2a2f02c-fbda-4e01-8bbb-2236283c9ff4" />
     </Dynamo.Graph.Annotations.AnnotationModel>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="aafa5f8d-47f9-472f-8b56-7f4aa123e938" annotationText="Get parameter names (keys)" left="7581.79339893136" top="-1070.37558412205" width="554.487200864631" height="424" fontSize="30" InitialTop="-1024.37558412205" InitialHeight="127.15313547064" TextblockHeight="36" backgrouund="#FF48B9FF">
+    <Dynamo.Graph.Annotations.AnnotationModel guid="aafa5f8d-47f9-472f-8b56-7f4aa123e938" annotationText="Get parameter names (keys)" left="7581.79339893136" top="-1070.37558412205" width="528.487200864631" height="424" fontSize="30" InitialTop="-1024.37558412205" InitialHeight="127.15313547064" TextblockHeight="36" backgrouund="#FF48B9FF">
       <Models ModelGuid="7c01f714-daf3-4bee-aa04-f214edb2e8b4" />
       <Models ModelGuid="261030b8-129e-4e99-a9bd-2e7f05ac9ce8" />
     </Dynamo.Graph.Annotations.AnnotationModel>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="f601d121-c328-4096-99d3-5e67c36dd75e" annotationText="Get parameter values (values)" left="8190.32964849928" top="-1191.86434569652" width="599.667569380979" height="428.13979982702" fontSize="30" InitialTop="-1145.86434569652" InitialHeight="420.081624226391" TextblockHeight="36" backgrouund="#FF48B9FF">
+    <Dynamo.Graph.Annotations.AnnotationModel guid="f601d121-c328-4096-99d3-5e67c36dd75e" annotationText="Get parameter values (values)" left="8190.32964849928" top="-1191.86434569652" width="536.667569380979" height="428.13979982702" fontSize="30" InitialTop="-1145.86434569652" InitialHeight="420.081624226391" TextblockHeight="36" backgrouund="#FF48B9FF">
       <Models ModelGuid="3664a47a-f43e-4111-aaf9-947a8954303b" />
       <Models ModelGuid="96d307a0-18bd-47b9-824d-b299b86edafc" />
     </Dynamo.Graph.Annotations.AnnotationModel>
@@ -462,11 +449,11 @@ OUT = sqlCommand
       <Models ModelGuid="66055e37-dad2-4e2f-b64e-ebff6f04a1d9" />
       <Models ModelGuid="422cd9d4-6381-4a08-9c76-d502a7edc69f" />
     </Dynamo.Graph.Annotations.AnnotationModel>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="05754019-56dc-4f4f-a316-d28537d7d18f" annotationText="Test: write to excel" left="8476.45432104274" top="-2206.07056886895" width="458.422516246281" height="322.67090809548" fontSize="30" InitialTop="-2160.07056886895" InitialHeight="306.670908095481" TextblockHeight="36" backgrouund="#FF848484">
+    <Dynamo.Graph.Annotations.AnnotationModel guid="05754019-56dc-4f4f-a316-d28537d7d18f" annotationText="Test: write to excel" left="8476.45432104274" top="-2206.07056886895" width="458.422516246279" height="322.67090809548" fontSize="30" InitialTop="-2160.07056886895" InitialHeight="306.670908095481" TextblockHeight="36" backgrouund="#FF848484">
       <Models ModelGuid="5b569c46-ad9f-4d95-9f31-7465848adc3a" />
       <Models ModelGuid="7d791b51-fa99-4ba8-9bb2-3adbc6112ed0" />
     </Dynamo.Graph.Annotations.AnnotationModel>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="5c07dbcf-82d8-4ffa-ab02-5cc1ea251f3b" annotationText="Create dictionary of parameters (one element)" left="7883.78990856396" top="-2300.7276940797" width="494.592392994899" height="460.16000571192" fontSize="30" InitialTop="-2218.7276940797" InitialHeight="408.16000571192" TextblockHeight="72" backgrouund="#FFC1D676">
+    <Dynamo.Graph.Annotations.AnnotationModel guid="5c07dbcf-82d8-4ffa-ab02-5cc1ea251f3b" annotationText="Create dictionary of parameters (one element)" left="7883.78990856396" top="-2300.7276940797" width="448.092392994899" height="460.16000571192" fontSize="30" InitialTop="-2218.7276940797" InitialHeight="408.16000571192" TextblockHeight="72" backgrouund="#FFC1D676">
       <Models ModelGuid="6bdea15e-1cab-45e7-a25c-8c5793dc6886" />
       <Models ModelGuid="f7ae73b1-5074-4739-89b7-81ab271251f0" />
     </Dynamo.Graph.Annotations.AnnotationModel>
@@ -474,7 +461,7 @@ OUT = sqlCommand
       <Models ModelGuid="48ac7af0-c379-4fa8-80f9-66b0e2c87368" />
       <Models ModelGuid="b667a665-4d10-4bff-a2f3-acf1eb3aea4f" />
     </Dynamo.Graph.Annotations.AnnotationModel>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="f4cb59f2-411f-4f3d-a6e0-02c0e3a55d08" annotationText="Create SQL command (one element)" left="8460.74438713452" top="-2464.06616842171" width="531.310373939819" height="181.58516177868" fontSize="30" InitialTop="-2418.06616842171" InitialHeight="172.267787095524" TextblockHeight="36" backgrouund="#FFC1D676">
+    <Dynamo.Graph.Annotations.AnnotationModel guid="f4cb59f2-411f-4f3d-a6e0-02c0e3a55d08" annotationText="Create SQL command (one element)" left="8460.74438713452" top="-2464.06616842171" width="531.310373939821" height="181.58516177868" fontSize="30" InitialTop="-2418.06616842171" InitialHeight="172.267787095524" TextblockHeight="36" backgrouund="#FFC1D676">
       <Models ModelGuid="c3820275-ed2a-4d0e-8f5d-3808622e3f78" />
       <Models ModelGuid="3160ef7e-ec0e-4126-a922-2c5c08936af2" />
     </Dynamo.Graph.Annotations.AnnotationModel>
@@ -482,11 +469,11 @@ OUT = sqlCommand
       <Models ModelGuid="06fc78cf-4f9c-41c6-8627-37713ea361f4" />
       <Models ModelGuid="97c493f8-333a-47cd-b455-fe5eeeb52437" />
     </Dynamo.Graph.Annotations.AnnotationModel>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="33fb2705-ef00-400e-8b71-8866985488fe" annotationText="Create dictionary of parameters (all elements)" left="7886.8669098981" top="-2840.56846422502" width="519.92622641881" height="472.01116041549" fontSize="30" InitialTop="-2758.56846422502" InitialHeight="124.16000571192" TextblockHeight="72" backgrouund="#FFC1D676">
+    <Dynamo.Graph.Annotations.AnnotationModel guid="33fb2705-ef00-400e-8b71-8866985488fe" annotationText="Create dictionary of parameters (all elements)" left="7886.8669098981" top="-2840.56846422502" width="445.926226418815" height="472.01116041549" fontSize="30" InitialTop="-2758.56846422502" InitialHeight="124.16000571192" TextblockHeight="72" backgrouund="#FFC1D676">
       <Models ModelGuid="d609f85f-49d5-49d7-867a-ff1478aa59e0" />
       <Models ModelGuid="df46c5f3-6467-4ecb-9c65-c431942b3e7e" />
     </Dynamo.Graph.Annotations.AnnotationModel>
-    <Dynamo.Graph.Annotations.AnnotationModel guid="cdeef2ed-b036-40c0-be28-c7c8d7c8a533" annotationText="Create SQL command" left="8458.55294841331" top="-2898.76141106028" width="527.144000758623" height="424" fontSize="30" InitialTop="-2852.76141106028" InitialHeight="165.58516177868" TextblockHeight="36" backgrouund="#FFC1D676">
+    <Dynamo.Graph.Annotations.AnnotationModel guid="cdeef2ed-b036-40c0-be28-c7c8d7c8a533" annotationText="Create SQL command (one element)" left="8458.55294841331" top="-2908.48294848308" width="515.310373939821" height="424" fontSize="30" InitialTop="-2862.48294848308" InitialHeight="165.58516177868" TextblockHeight="36" backgrouund="#FFC1D676">
       <Models ModelGuid="08eb58bc-dfb2-4972-8222-1091d91e4407" />
       <Models ModelGuid="48b45785-24c4-44ab-bb5c-63ee2a69837b" />
     </Dynamo.Graph.Annotations.AnnotationModel>
